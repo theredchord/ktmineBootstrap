@@ -71,6 +71,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\images\ktminelogo_final_130.png" />
     <Content Include="Content\less\accordion.css">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -156,11 +157,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>modals.less</DependentUpon>
     </Content>
-    <Content Include="Content\less\navbar.css">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>navbar.less</DependentUpon>
-    </Content>
     <Content Include="Content\less\navs.css">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -190,11 +186,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>reset.less</DependentUpon>
-    </Content>
-    <Content Include="Content\less\scaffolding.css">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>scaffolding.less</DependentUpon>
     </Content>
     <Content Include="Content\less\sprites.css">
       <AutoGen>True</AutoGen>
@@ -406,10 +397,7 @@
       <Generator>LessGenerator</Generator>
       <LastGenOutput>modals.css</LastGenOutput>
     </None>
-    <None Include="Content\less\navbar.less">
-      <Generator>LessGenerator</Generator>
-      <LastGenOutput>navbar.css</LastGenOutput>
-    </None>
+    <None Include="Content\less\navbar.less" />
     <None Include="Content\less\navs.less">
       <Generator>LessGenerator</Generator>
       <LastGenOutput>navs.css</LastGenOutput>
@@ -435,10 +423,7 @@
       <LastGenOutput>reset.css</LastGenOutput>
     </None>
     <None Include="Content\less\responsive.less" />
-    <None Include="Content\less\scaffolding.less">
-      <Generator>LessGenerator</Generator>
-      <LastGenOutput>scaffolding.css</LastGenOutput>
-    </None>
+    <None Include="Content\less\scaffolding.less" />
     <None Include="Content\less\sprites.less">
       <Generator>LessGenerator</Generator>
       <LastGenOutput>sprites.css</LastGenOutput>
