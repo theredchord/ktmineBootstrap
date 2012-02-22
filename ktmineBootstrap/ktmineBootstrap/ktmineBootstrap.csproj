@@ -81,11 +81,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>alerts.less</DependentUpon>
     </Content>
-    <Content Include="Content\less\bootstrap.css">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>bootstrap.less</DependentUpon>
-    </Content>
     <Content Include="Content\less\breadcrumbs.css">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -196,11 +191,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>reset.less</DependentUpon>
     </Content>
-    <Content Include="Content\less\responsive.css">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>responsive.less</DependentUpon>
-    </Content>
     <Content Include="Content\less\scaffolding.css">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -235,11 +225,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>utilities.less</DependentUpon>
-    </Content>
-    <Content Include="Content\less\variables.css">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>variables.less</DependentUpon>
     </Content>
     <Content Include="Content\less\wells.css">
       <AutoGen>True</AutoGen>
@@ -359,10 +344,7 @@
       <Generator>LessGenerator</Generator>
       <LastGenOutput>alerts.css</LastGenOutput>
     </None>
-    <None Include="Content\less\bootstrap.less">
-      <Generator>LessGenerator</Generator>
-      <LastGenOutput>bootstrap.css</LastGenOutput>
-    </None>
+    <None Include="Content\less\bootstrap.less" />
     <None Include="Content\less\breadcrumbs.less">
       <Generator>LessGenerator</Generator>
       <LastGenOutput>breadcrumbs.css</LastGenOutput>
@@ -452,10 +434,7 @@
       <Generator>LessGenerator</Generator>
       <LastGenOutput>reset.css</LastGenOutput>
     </None>
-    <None Include="Content\less\responsive.less">
-      <Generator>LessGenerator</Generator>
-      <LastGenOutput>responsive.css</LastGenOutput>
-    </None>
+    <None Include="Content\less\responsive.less" />
     <None Include="Content\less\scaffolding.less">
       <Generator>LessGenerator</Generator>
       <LastGenOutput>scaffolding.css</LastGenOutput>
@@ -484,10 +463,7 @@
       <Generator>LessGenerator</Generator>
       <LastGenOutput>utilities.css</LastGenOutput>
     </None>
-    <None Include="Content\less\variables.less">
-      <Generator>LessGenerator</Generator>
-      <LastGenOutput>variables.css</LastGenOutput>
-    </None>
+    <None Include="Content\less\variables.less" />
     <None Include="Content\less\wells.less">
       <Generator>LessGenerator</Generator>
       <LastGenOutput>wells.css</LastGenOutput>

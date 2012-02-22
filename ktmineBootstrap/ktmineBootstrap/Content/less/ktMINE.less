@@ -1,14 +1,41 @@
-﻿@ktRed: #c00;
-
-body
+﻿body
 {
 	h2, h3, h4, h5, h6
 	{
 		color: @ktRed;
 	}
 
+	.ktButton
+	{
+		color: @white;
+		.buttonBackground(@ktRed, darken(@ktRed, 10%));
+		&:hover
+		{
+			color: @white;
+		}
+	}
+
+	.navbar
+	{
+		border-top-color: @grayLighter - 20;
+		border-top-style: solid;
+		border-top-width: 1px;
+		.navbar-inner li
+		{
+			a
+			{
+				color: @ktRed;
+			}
+			&:hover
+			{
+				background-color: @ktRed + 20;
+			}
+		}
+	}
+
 	.nav-tabs a
 	{
 		color: @ktRed;
+		font-weight: bold;
 	}
 }
