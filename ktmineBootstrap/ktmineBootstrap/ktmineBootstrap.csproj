@@ -407,6 +407,7 @@
       <Generator>LessGenerator</Generator>
       <LastGenOutput>hero-unit.css</LastGenOutput>
     </None>
+    <None Include="Content\less\ktMINE.less" />
     <None Include="Content\less\labels.less">
       <Generator>LessGenerator</Generator>
       <LastGenOutput>labels.css</LastGenOutput>
