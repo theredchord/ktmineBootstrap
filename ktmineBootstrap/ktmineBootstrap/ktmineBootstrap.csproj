@@ -157,11 +157,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>modals.less</DependentUpon>
     </Content>
-    <Content Include="Content\less\navs.css">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>navs.less</DependentUpon>
-    </Content>
     <Content Include="Content\less\pager.css">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -398,10 +393,7 @@
       <LastGenOutput>modals.css</LastGenOutput>
     </None>
     <None Include="Content\less\navbar.less" />
-    <None Include="Content\less\navs.less">
-      <Generator>LessGenerator</Generator>
-      <LastGenOutput>navs.css</LastGenOutput>
-    </None>
+    <None Include="Content\less\navs.less" />
     <None Include="Content\less\pager.less">
       <Generator>LessGenerator</Generator>
       <LastGenOutput>pager.css</LastGenOutput>
