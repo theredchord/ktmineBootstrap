@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\images\ktminelogo_final_130.png" />
+    <Content Include="Content\images\ktSprites.png" />
     <Content Include="Content\less\accordion.css">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
