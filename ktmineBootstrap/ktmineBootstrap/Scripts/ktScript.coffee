@@ -1,3 +1,3 @@
 warningPlacement = $('span[rel=tooltip]').tooltip(
-	'placement' : 'right'
+	'placement' : 'bottom'
 )

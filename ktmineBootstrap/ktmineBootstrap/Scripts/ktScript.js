@@ -2,7 +2,7 @@
   var warningPlacement;
 
   warningPlacement = $('span[rel=tooltip]').tooltip({
-    'placement': 'right'
+    'placement': 'bottom'
   });
 
 }).call(this);
