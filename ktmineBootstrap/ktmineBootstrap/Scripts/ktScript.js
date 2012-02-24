@@ -1,8 +1,13 @@
 (function() {
-  var warningPlacement;
+  var iconChange, warningPlacement;
 
-  warningPlacement = $('span[rel=tooltip]').tooltip({
+  warningPlacement = $('.ktWarningOn, .ktWarningOff').tooltip({
     'placement': 'bottom'
+  });
+
+  iconChange = $('#liAssignedSIC').hover(function() {
+    $('.sicCodeWarning').addClass('ktWarningOn');
+    return $('.sicCodeWarning').removeClass('ktWarningOff');
   });
 
 }).call(this);
