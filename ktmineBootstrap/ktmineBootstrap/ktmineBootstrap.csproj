@@ -288,8 +288,9 @@
     <Content Include="Scripts\ktScript.js">
       <DependentUpon>ktScript.coffee</DependentUpon>
     </Content>
-    <Content Include="Scripts\less-1.2.1.min.js" />
+    <Content Include="Scripts\less-1.2.2.min.js" />
     <Content Include="Scripts\modernizr-2.0.6-development-only.js" />
+    <Content Include="Views\Home\Index.htm" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

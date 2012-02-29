@@ -1,15 +1,15 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>@ViewBag.Title</title>
-    <link href="@Url.Content("~/Content/less/bootstrap.less")" rel="stylesheet" type="text/less" />
-    <link href="@Url.Content("~/Content/less/ktMINE.less")" rel="stylesheet" type="text/less" />
+    <title>About Us</title>
+    <link href="/Content/less/bootstrap.less" rel="stylesheet" type="text/less" />
+    <link href="/Content/less/ktMINE.less" rel="stylesheet" type="text/less" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="@Url.Content("~/Scripts/less-1.2.2.min.js")" type="text/javascript"></script>
+    <script src="/Scripts/less-1.2.2.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="page row-fluid">
-        <img class="offset4" src="@Url.Content("~/Content/images/ktminelogo_final_130.png")" alt="logo" />
+        <img class="offset4" src="/Content/images/ktminelogo_final_130.png" alt="logo" />
         <div class="navbar">
             <div class="navbar-inner">
                 <div class="container">
@@ -18,7 +18,7 @@
                             <a href="/">Home</a>
                         </li>
                         <li>
-                            <a href="/Home/About">About</a>
+                            <a href="/Views/Home/About.htm">About</a>
                         </li>
                         <li>
                             <a href="/">Dropdown</a>
@@ -34,7 +34,7 @@
             <div class="row offset4" id="title">
                 <h1>ktMINE Application Title</h1>
             </div>
-            @*<div id="logindisplay">
+            <!--<div id="logindisplay">
                 @Html.Partial("_LogOnPartial")
             </div>
             <div id="menucontainer">
@@ -42,10 +42,13 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                 </ul>
-            </div>*@
+            </div>-->
         </div>
         <div id="main span12">
-            @RenderBody()
+            <h2>About</h2>
+            <p>
+                 Put content here.
+            </p>
         </div>
         <div id="footer span12">
         </div>
