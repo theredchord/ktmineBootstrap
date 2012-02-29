@@ -31,6 +31,13 @@
 			{
 				background-color: @ktRedLight;
 			}
+			.dropdown-menu a
+			{
+				&:hover
+				{
+					color: @white;
+				}
+			}
 		}
 	}
 
@@ -61,16 +68,50 @@
 	{
 		margin: -2px;
 		padding: 15px;
-		box-shadow: 0px -3px 5px #a6a6a6;
+		box-shadow: 0px -3px 5px @ktBoxShadow;
 		z-index: 0;
 	}
 }
 
-.footer
+#footer
 {
-	.navbar
+	margin: 20px 0px 0px 0px;
+	position: absolute;
+	bottom: 0px;
+	.footbar
 	{
-		
+		height: 35px;
+		background-color: @ktRed;
+		box-shadow: 0px -2px 20px @ktBoxShadow;
+		.nav-pills > li > a
+		{
+			color: @white;
+			&:hover
+			{
+				color: @ktRed;
+				background-color: @white;
+			}
+		}
+	}
+	
+	.ktTerms
+	{
+		.nav-pills > li > a
+		{
+			font-size: 10px;
+			color: @grayDark;
+		}
+		.nav
+		{
+			display: inline-block;
+		}
+		.ktCopyright
+		{
+			margin-top: 5px;
+			color: @grayDark;
+			font-size: 10px;
+			display: inline-block;
+		}
 	}
 }
 

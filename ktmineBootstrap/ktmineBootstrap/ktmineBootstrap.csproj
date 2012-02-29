@@ -118,11 +118,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>component-animations.less</DependentUpon>
     </Content>
-    <Content Include="Content\less\dropdowns.css">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dropdowns.less</DependentUpon>
-    </Content>
     <Content Include="Content\less\forms.css">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -276,6 +271,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="README.jQuery.vsdoc.txt" />
+    <Content Include="Scripts\bootstrap-dropdown.js" />
     <Content Include="Scripts\bootstrap-tooltip.js" />
     <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
@@ -290,6 +286,7 @@
     </Content>
     <Content Include="Scripts\less-1.2.2.min.js" />
     <Content Include="Scripts\modernizr-2.0.6-development-only.js" />
+    <Content Include="Views\Home\About.htm" />
     <Content Include="Views\Home\Index.htm" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -365,10 +362,7 @@
       <Generator>LessGenerator</Generator>
       <LastGenOutput>component-animations.css</LastGenOutput>
     </None>
-    <None Include="Content\less\dropdowns.less">
-      <Generator>LessGenerator</Generator>
-      <LastGenOutput>dropdowns.css</LastGenOutput>
-    </None>
+    <None Include="Content\less\dropdowns.less" />
     <None Include="Content\less\forms.less">
       <Generator>LessGenerator</Generator>
       <LastGenOutput>forms.css</LastGenOutput>

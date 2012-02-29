@@ -1,30 +1,38 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
 <div class="row offset4">
     <h2>@ViewBag.Message</h2>
     <div>
-        <h1>h1</h1>
-        <h2>h2</h2>
-        <h3>h3</h3>
-        <h4>h4</h4>
-        <h5>h5</h5>
-        <h6>h6</h6>
+        <h1>
+            h1</h1>
+        <h2>
+            h2</h2>
+        <h3>
+            h3</h3>
+        <h4>
+            h4</h4>
+        <h5>
+            h5</h5>
+        <h6>
+            h6</h6>
     </div>
     <br />
     <div class="sectionTab row span2">
-        <h3>Tab title</h3>
+        <h3>
+            Tab title</h3>
     </div>
-    <br /><br />
+    <br />
+    <br />
     <div class="sectionContent span3">
-            Regular text<br />
-            <a href="#">Regular link</a>
-            <span rel="tooltip" title="SIC Code Warning" class="ktIcon ktWarningOn"></span>
-            <span rel="tooltip" title="ktWarningOff" class="ktIcon ktWarningOff"></span><br /><br />
-            <input type="button" class="btn ktButton" value="Button" />
+        Regular text<br />
+        <a href="#">Regular link</a> <span rel="tooltip" title="SIC Code Warning" class="ktIcon ktWarningOn">
+        </span><span rel="tooltip" title="ktWarningOff" class="ktIcon ktWarningOff"></span>
+        <br />
+        <br />
+        <input type="button" class="btn ktButton" value="ktButton" />
+        <input type="button" class="btn" value="Default Button" />
     </div>
 </div>
-
 <script type="text/javascript" src="@Url.Content("~/Scripts/bootstrap-tooltip.js")"></script>
 <script type="text/javascript" src="@Url.Content("~/Scripts/ktScript.js")"></script>
