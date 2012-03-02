@@ -6,27 +6,31 @@
 </head>
 <body>
     <div class="page row-fluid">
-        <div class="row-fluid">
-            <div class="span5">
-                <div class="offset4" id="logo">
-                    <img src="@Url.Content("~/Content/images/ktminelogo_final_130.png")" alt="logo" />
+        <div class="row">
+            <div class="span12">
+                <div class="row">
+                <div class="span4">
+                    <div class="offset4" id="logo">
+                        <img src="@Url.Content("~/Content/images/ktminelogo_final_130.png")" alt="logo" />
+                    </div>
                 </div>
-            </div>
-            <div class="span5">
-                <div class="offset3" id="login">
-                    <div class="sectionTab span2">
-                        <h3>
-                            Login</h3>
+                <div class="span5">
+                    <div class="offset8" id="login">
+                        <div class="sectionTab span2">
+                            <h3>
+                                Login</h3>
+                        </div>
+                        <br />
+                        <br />
+                        <div class="sectionContent span4">
+                            <form class="form-inline">
+                            <input type="text" class="input-small" placeholder="Username" />
+                            <input type="text" class="input-small" placeholder="Password" />
+                            <input class="ktButton btn-mini span1" type="submit" value="Submit" />
+                            </form>
+                        </div>
                     </div>
-                    <br />
-                    <br />
-                    <div class="sectionContent span4">
-                        <form class="form-inline">
-                        <input type="text" class="input-small" placeholder="Username" />
-                        <input type="text" class="input-small" placeholder="Password" />
-                        <input class="ktButton btn-mini span1" type="submit" value="Submit" />
-                        </form>
-                    </div>
+                </div>
                 </div>
             </div>
         </div>
