@@ -1,5 +1,10 @@
 ﻿body
 {
+	#main
+	{
+		margin: 5px 0px 0px 0px;
+	}
+
 	h2, h3, h4, h5, h6
 	{
 		color: @ktRed;
@@ -17,7 +22,7 @@
 
 	.navbar
 	{
-		margin-top: 5px;
+		margin: 5px 0px 0px 0px;
 		border-top-color: @ktGray;
 		border-top-style: solid;
 		border-top-width: 1px;
@@ -47,6 +52,7 @@
 		font-weight: bold;
 	}
 
+	//Content tabs
 	.sectionTab
 	{
 		margin-left: -2px;
@@ -108,7 +114,7 @@
 		}
 		.ktCopyright
 		{
-			margin-top: 5px;
+			margin-top: 10px;
 			color: @grayDark;
 			font-size: 10px;
 			display: inline-block;
@@ -137,4 +143,18 @@
 .ktWarningOff
 { 
 	background-position: 0 -19px;
-} 
+}
+
+//Search filter containers
+.floatingBox
+{
+	margin: 10px 0 0 0;
+	padding: 10px;
+	background-color: @white;
+	border-color: #ccc;
+	border-color: rgba(0,0,0,.2);
+	border-style: solid;
+	border-width: 1px;
+	.border-radius(5px);
+	.box-shadow(0 5px 10px rgba(0,0,0,.2));
+}
