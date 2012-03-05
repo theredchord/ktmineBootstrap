@@ -94,23 +94,27 @@
 
 	.ktModal
 	{
-		padding: 10px 10px 0px 10px;
 		background-color: @white;
 		border-color: @black;
 		border-style: solid;
-		border-width: 1px;
+		border-width: 4px;
 		.border-radius(5px);
 		.box-shadow(0 5px 10px rgba(0,0,0,.2));
-		.ktModalSubtext
+		.ktModalHeader
 		{
-			font-weight: bold;
-			margin-bottom: 5px;
-			padding-bottom: 5px;
-			border-bottom: 1px solid black;
+			background-color: @grayLighter;
+			padding: 5px 10px 0px 10px;
+			border-bottom: 1px solid @grayLight;
+			.ktModalSubtext
+				{
+					font-weight: bold;
+					margin-bottom: 5px;
+					padding-bottom: 5px;
+				}
 		}
 		.ktModalForm
 		{
-			padding-top: 10px;
+			padding: 15px 0px 0px 10px;
 		}
 	}
 }
