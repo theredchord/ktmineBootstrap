@@ -10,8 +10,6 @@ namespace ktmineBootstrap.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "ktMINE Bootstrap";
-
             return View();
         }
 

@@ -10,28 +10,28 @@
         <div class="row">
             <div class="span12">
                 <div class="row">
-                <div class="span4">
-                    <div class="offset4" id="logo">
-                        <img src="@Url.Content("~/Content/images/ktminelogo_final_130.png")" alt="logo" />
-                    </div>
-                </div>
-                <div class="span5">
-                    <div class="offset8" id="login">
-                        <div class="sectionTab span2">
-                            <h3>
-                                Login</h3>
-                        </div>
-                        <br />
-                        <br />
-                        <div class="sectionContent span4">
-                            <form class="form-inline">
-                            <input type="text" class="input-small" placeholder="Username" />
-                            <input type="text" class="input-small" placeholder="Password" />
-                            <input class="ktButton btn-mini span1" type="submit" value="Submit" />
-                            </form>
+                    <div class="span4">
+                        <div class="offset4" id="logo">
+                            <img src="@Url.Content("~/Content/images/ktminelogo_final_130.png")" alt="logo" />
                         </div>
                     </div>
-                </div>
+                    <div class="span5">
+                        <div class="offset8" id="login">
+                            <div class="sectionTab span2">
+                                <h3>
+                                    Login</h3>
+                            </div>
+                            <br />
+                            <br />
+                            <div class="sectionContent span4">
+                                <form class="form-inline">
+                                <input type="text" class="input-small" placeholder="Username" />
+                                <input type="text" class="input-small" placeholder="Password" />
+                                <input class="ktButton btn-mini span1" type="submit" value="Submit" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,11 +78,11 @@
         <div id="main" class="row span12">
             <div id="title" class="offset4">
                 <h1>
-                    ktMINE Application Title</h1>
+                    ktMINE Bootstrap</h1>
             </div>
             @RenderBody()
         </div>
-        <div id="footer" class="row span12">
+        <div id="footer" class="row-fluid">
             <div class="footbar">
                 <div class="row offset4">
                     <ul class="nav nav-pills">
@@ -92,13 +92,15 @@
                     </ul>
                 </div>
             </div>
-            <div class="ktTerms offset4 span11">
-                <ul class="nav nav-pills">
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-                <div class="ktCopyright pull-right">
-                    ktMINE 2012. All rights reserved.</div>
+            <div class="row ktTerms offset4">
+                <div class="span12">
+                    <ul class="nav nav-pills">
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <div class="ktCopyright">
+                        ktMINE 2012. All rights reserved.</div>
+                </div>
             </div>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
             <script src="@Url.Content("~/Scripts/less-1.2.2.min.js")" type="text/javascript"></script>

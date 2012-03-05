@@ -2,7 +2,10 @@
     ViewBag.Title = "ktMINE Bootstrap";
 }
 <div class="row span12 offset4">
-    <h2>@ViewBag.Message</h2>
+    <h3>
+        ktMINE Bootstrap is a project for ktMINE applications built on Twitter Bootstrap
+        to maintain styling consistency across products, adhere to branding, and allows
+        developers to pay less attention to styling and more on the application itself.</h3>
     <hr />
     <div class="row-fluid">
         <h2>
@@ -47,24 +50,24 @@
     </div>
     <br />
     <div class="row-fluid">
-        <pre class="span8 prettyprint lang-html">
-            &lt;div class="ktModal span6"&gt;
-                &lt;div class="ktModalHeader"&gt;
-                    &lt;h3&gt;
-                        Modal Header&lt;/h3&gt;
-                    &lt;div class="ktModalSubtext"&gt;
-                        Header subtext goes here&lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class="ktModalForm"&gt;
-                    &lt;form class="form-inline"&gt;
-                    &lt;label&gt;
-                        Form label:&lt;/label&gt;
-                    &lt;input type="text" class="" /&gt;
-                    &lt;input type="button" class="btn" value="Cancel" /&gt;
-                    &lt;input type="button" class="btn ktButton" value="Save" /&gt;
-                    &lt;/form&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
+        <pre class="span7 prettyprint lang-html">
+&lt;div class="ktModal span6"&gt;
+    &lt;div class="ktModalHeader"&gt;
+        &lt;h3&gt;
+            Modal Header&lt;/h3&gt;
+        &lt;div class="ktModalSubtext"&gt;
+            Header subtext goes here&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="ktModalForm"&gt;
+        &lt;form class="form-inline"&gt;
+        &lt;label&gt;
+            Form label:&lt;/label&gt;
+        &lt;input type="text" class="" /&gt;
+        &lt;input type="button" class="btn" value="Cancel" /&gt;
+        &lt;input type="button" class="btn ktButton" value="Save" /&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
         </pre>
     </div>
     <hr />
@@ -109,6 +112,26 @@
             <input type="button" class="btn ktButton" value="ktButton" />
             <input type="button" class="btn" value="Default Button" />
         </div>
+    </div>
+    <br />
+    <div class="row-fluid">
+        <pre class="span10 prettyprint lang-html">
+&lt;div class="sectionTab row span2"&gt;
+    &lt;h3&gt;
+        Tab title&lt;/h3&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;div class="sectionContent span3"&gt;
+    Regular text&lt;br /&gt;
+    &lt;a href="#"&gt;Regular link&lt;/a&gt; &lt;span rel="tooltip" title="SIC Code Warning" class="ktIcon ktWarningOn"&gt;
+    &lt;/span&gt;&lt;span rel="tooltip" title="ktWarningOff" class="ktIcon ktWarningOff"&gt;&lt;/span&gt;
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;input type="button" class="btn ktButton" value="ktButton" /&gt;
+    &lt;input type="button" class="btn" value="Default Button" /&gt;
+&lt;/div&gt;
+            </pre>
     </div>
 </div>
 <script type="text/javascript" src="@Url.Content("~/Scripts/bootstrap-tooltip.js")"></script>

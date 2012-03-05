@@ -213,6 +213,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>wells.less</DependentUpon>
     </Content>
+    <Content Include="Content\prettify.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -286,6 +287,7 @@
     </Content>
     <Content Include="Scripts\less-1.2.2.min.js" />
     <Content Include="Scripts\modernizr-2.0.6-development-only.js" />
+    <Content Include="Scripts\prettify.js" />
     <Content Include="Views\Home\About.htm" />
     <Content Include="Views\Home\Index.htm" />
     <Content Include="Web.config" />
