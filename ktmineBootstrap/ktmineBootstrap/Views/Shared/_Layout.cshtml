@@ -11,12 +11,12 @@
             <div class="span12">
                 <div class="row">
                     <div class="span4">
-                        <div class="offset4" id="logo">
+                        <div class="" id="logo">
                             <img src="@Url.Content("~/Content/images/ktminelogo_final_130.png")" alt="logo" />
                         </div>
                     </div>
                     <div class="span5">
-                        <div class="offset8" id="login">
+                        <div class="" id="login">
                             <div class="sectionTab span2">
                                 <h3>
                                     Login</h3>
@@ -64,7 +64,7 @@
                 </div>
             </div>
         </div>
-        <div id="header" class="row span12">
+        <div id="header" class="row">
             @*<div id="logindisplay">
                 @Html.Partial("_LogOnPartial")
             </div>
@@ -75,16 +75,18 @@
                 </ul>
             </div>*@
         </div>
-        <div id="main" class="row span12">
-            <div id="title" class="offset4">
+        <div id="main" class="row">
+            <div class="span12">
+                <div id="title">
                 <h1>
                     ktMINE Bootstrap</h1>
+                </div>
+                @RenderBody()
             </div>
-            @RenderBody()
         </div>
         <div id="footer" class="row-fluid">
             <div class="footbar">
-                <div class="row offset4">
+                <div class="row">
                     <ul class="nav nav-pills">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Company</a></li>
@@ -92,7 +94,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="row ktTerms offset4">
+            <div class="row ktTerms">
                 <div class="span12">
                     <ul class="nav nav-pills">
                         <li><a href="#">Terms of Use</a></li>
