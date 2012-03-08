@@ -2,54 +2,59 @@
     ViewBag.Title = "ktMINE Bootstrap";
 }
 <div>
-    <h3>
-        ktMINE Bootstrap is a project for ktMINE applications built on Twitter Bootstrap
-        to maintain styling consistency across products, adhere to branding, and allows
-        developers to pay less attention to styling and more on the application itself.</h3>
+    <div class="hero-unit">
+        <h1>
+            ktMINE Bootstrap</h1>
+        <h3>
+            ktMINE Bootstrap is a project for ktMINE applications built on Twitter Bootstrap
+            to maintain styling consistency across products, adhere to branding, and allows
+            developers to pay less attention to styling and more on the application itself.</h3>
+    </div>
     <hr />
     <div class="row-fluid">
         <h2>
             Typography</h2>
-        <br />
-        <h1>
-            h1</h1>
-        <h2>
-            h2</h2>
-        <h3>
-            h3</h3>
-        <h4>
-            h4</h4>
-        <h5>
-            h5</h5>
-        <h6>
-            h6</h6>
+        <div class="regBox">
+            <h1>
+                h1</h1>
+            <h2>
+                h2</h2>
+            <h3>
+                h3</h3>
+            <h4>
+                h4</h4>
+            <h5>
+                h5</h5>
+            <h6>
+                h6</h6>
+        </div>
     </div>
     <hr />
     <div class="row-fluid">
         <h2>
             ktModal</h2>
-        Modal component used for submission prompts, like save prompts for search filters.<br />
-        <br />
-        <div class="ktModal span6">
-            <div class="ktModalHeader">
-                <h3>
-                    Modal Header</h3>
-                <div class="ktModalSubtext">
-                    Header subtext goes here</div>
-            </div>
-            <div class="ktModalForm">
-                <form class="form-inline">
-                <label>
-                    Form label:</label>
-                <input type="text" class="" />
-                <input type="button" class="btn" value="Cancel" />
-                <input type="button" class="btn ktButton" value="Save" />
-                </form>
+        Modal component used for submission prompts, like save prompts for search filters.
+        <div class="regBox">
+            <div class="ktModal span6">
+                <div class="ktModalHeader">
+                    <h3>
+                        Modal Header</h3>
+                    <div class="ktModalSubtext">
+                        Header subtext goes here</div>
+                </div>
+                <div class="ktModalForm">
+                    <form class="form-inline">
+                    <label>
+                        Form label:</label>
+                    <input type="text" class="" />
+                    <input type="button" class="btn" value="Cancel" />
+                    <input type="button" class="btn ktButton" value="Save" />
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-    <br />
-    <div class="row-fluid">
+    <div class="row-fluid regBox">
         <pre class="span7 prettyprint lang-html">
 &lt;div class="ktModal span6"&gt;
     &lt;div class="ktModalHeader"&gt;
@@ -77,9 +82,7 @@
         Floating containers that are versatile and can contain text content or combobox
         functionality - intentionally designed for RRF Search Center filter menus. Just
         add <code>.floatingBox</code> to an element.
-        <br />
-        <br />
-        <div class="floatingBox">
+        <div class="floatingBox regBox">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend commodo
             augue, et gravida nisi vulputate vitae. Praesent tempus volutpat nunc, sit amet
             suscipit leo vehicula id. Curabitur at neque et orci ullamcorper venenatis eget
@@ -95,41 +98,45 @@
             Content Tabs</h2>
         Content tabs are used to separate content sections similar to the ones seen on the
         ktMINE public website.
-        <br />
-        <br />
-        <div class="sectionTab row span2">
-            <h3>
-                Tab title</h3>
-        </div>
-        <br />
-        <br />
-        <div class="sectionContent span3">
-            Regular text<br />
-            <a href="#">Regular link</a> <span rel="tooltip" title="SIC Code Warning" class="ktIcon ktWarningOn">
-            </span><span rel="tooltip" title="ktWarningOff" class="ktIcon ktWarningOff"></span>
-            <br />
-            <br />
-            <input type="button" class="btn ktButton" value="ktButton" />
-            <input type="button" class="btn" value="Default Button" />
+        <div class="regBox">
+            <div class="row">
+                <div class="sectionTab span2">
+                    <h3>
+                        Tab title</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="sectionContent span3">
+                    Regular text<br />
+                    <a href="#">Regular link</a> <span rel="tooltip" title="SIC Code Warning" class="ktIcon ktWarningOn">
+                    </span><span rel="tooltip" title="ktWarningOff" class="ktIcon ktWarningOff"></span>
+                    <br />
+                    <br />
+                    <input type="button" class="btn ktButton" value="ktButton" />
+                    <input type="button" class="btn" value="Default Button" />
+                </div>
+            </div>
         </div>
     </div>
     <br />
     <div class="row-fluid">
         <pre class="span10 prettyprint lang-html">
-&lt;div class="sectionTab row span2"&gt;
-    &lt;h3&gt;
-        Tab title&lt;/h3&gt;
+&lt;div class="row"&gt;
+    &lt;div class="sectionTab span2"&gt;
+        &lt;h3&gt;
+            Tab title&lt;/h3&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;div class="sectionContent span3"&gt;
-    Regular text&lt;br /&gt;
-    &lt;a href="#"&gt;Regular link&lt;/a&gt; &lt;span rel="tooltip" title="SIC Code Warning" class="ktIcon ktWarningOn"&gt;
-    &lt;/span&gt;&lt;span rel="tooltip" title="ktWarningOff" class="ktIcon ktWarningOff"&gt;&lt;/span&gt;
-    &lt;br /&gt;
-    &lt;br /&gt;
-    &lt;input type="button" class="btn ktButton" value="ktButton" /&gt;
-    &lt;input type="button" class="btn" value="Default Button" /&gt;
+&lt;div class="row"&gt;
+    &lt;div class="sectionContent span3"&gt;
+        Regular text&lt;br /&gt;
+        &lt;a href="#"&gt;Regular link&lt;/a&gt; &lt;span rel="tooltip" title="SIC Code Warning" class="ktIcon ktWarningOn"&gt;
+        &lt;/span&gt;&lt;span rel="tooltip" title="ktWarningOff" class="ktIcon ktWarningOff"&gt;&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;br /&gt;
+        &lt;input type="button" class="btn ktButton" value="ktButton" /&gt;
+        &lt;input type="button" class="btn" value="Default Button" /&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
             </pre>
     </div>
