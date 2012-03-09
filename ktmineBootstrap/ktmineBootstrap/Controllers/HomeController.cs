@@ -17,5 +17,10 @@ namespace ktmineBootstrap.Controllers
         {
             return View();
         }
+
+        public ActionResult SidebarLayout()
+        {
+            return View();
+        }
     }
 }
