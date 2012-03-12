@@ -118,6 +118,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>component-animations.less</DependentUpon>
     </Content>
+    <Content Include="Content\less\finalBootstrap.css" />
     <Content Include="Content\less\forms.css">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
