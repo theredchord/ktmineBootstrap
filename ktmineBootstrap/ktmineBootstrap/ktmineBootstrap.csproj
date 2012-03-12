@@ -71,6 +71,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
     <Content Include="Content\images\ktIcon.png" />
     <Content Include="Content\images\ktminelogo_final_130.png" />
     <Content Include="Content\less\accordion.css">
@@ -83,6 +84,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>alerts.less</DependentUpon>
     </Content>
+    <Content Include="Content\less\bootstrapTest.css" />
     <Content Include="Content\less\breadcrumbs.css">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -118,7 +120,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>component-animations.less</DependentUpon>
     </Content>
-    <Content Include="Content\less\finalBootstrap.css" />
+    <Content Include="Content\less\finalBootstrap1.css" />
     <Content Include="Content\less\forms.css">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -225,6 +227,7 @@
     <Content Include="Scripts\modernizr-2.0.6-development-only.js" />
     <Content Include="Scripts\prettify.js" />
     <Content Include="Views\Home\About.htm" />
+    <Content Include="Views\Home\bootstrapTest.htm" />
     <Content Include="Views\Home\Index.htm" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
