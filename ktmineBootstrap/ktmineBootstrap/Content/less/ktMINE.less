@@ -129,6 +129,51 @@
 		}
 	}
 
+	.infoBox
+	{
+		margin: 0px;
+		border: 3px solid @black;
+		.border-radius(5px);
+		.box-shadow(0 4px 8px rgba(0,0,0,.2));
+		.infoBoxTitle
+		{
+			padding: 10px;
+			background-color: @grayLighter;
+			border-bottom: 1px solid @grayLight;
+		}
+		.infoSubtext
+		{
+			padding: 5px 0px 5px 10px;
+			background-color: @grayLighter;
+			font-weight: bolder;
+			border-bottom: 1px solid @grayLight;
+		}
+		.infoContent
+		{
+			padding: 10px;
+			border-bottom: 1px solid @grayLight;
+		}
+		.infoFooter
+		{
+			padding: 10px;
+			color: @grayLight;
+		}
+	}
+
+	.ktHighlight
+	{
+		padding: 2px 4px 3px;
+		font-size: @baseFontSize * .85;
+		color: @white;
+		text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+		background-color: @errorText;
+		.border-radius(3px);
+		&:hover    
+		{ 
+			background-color: darken(@errorText, 10%);
+		}
+	}
+
 	.prettyprint
 	{
 		padding: 15px;
