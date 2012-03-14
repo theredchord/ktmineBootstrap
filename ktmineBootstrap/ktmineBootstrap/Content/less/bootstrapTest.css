@@ -427,28 +427,10 @@ a:hover {
 
 /* ktMINE Bootstrap */
 
-.clearfix { *zoom:1; }
-.clearfix:before, .clearfix:after {
-  display:table;
-  content:"";
-}
-.clearfix:after { clear:both; }
 body #main { margin:5px 0px 0px 0px; }
 body h2, body h3, body h4, body h5, body h6 { color:#cc0000; }
 body .ktButton {
   color:#ffffff;
-  background-color:#b80000;
-  background-image:-moz-linear-gradient(top,#cc0000,#990000);
-  background-image:-ms-linear-gradient(top,#cc0000,#990000);
-  background-image:-webkit-gradient(linear,0 0,0 100%,from(#cc0000),to(#990000));
-  background-image:-webkit-linear-gradient(top,#cc0000,#990000);
-  background-image:-o-linear-gradient(top,#cc0000,#990000);
-  background-image:linear-gradient(top,#cc0000,#990000);
-  background-repeat:repeat-x;
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc0000', endColorstr='#990000', GradientType=0);
-  border-color:#990000 #990000 #4d0000;
-  border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
-  filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);
   text-shadow:0px 0px 0px;
 }
 body .ktButton:hover, body .ktButton:active, body .ktButton.active, body .ktButton.disabled, body .ktButton[disabled] { background-color:#990000; }
@@ -461,17 +443,18 @@ body .navbar {
   border-top-style:solid;
   border-top-width:1px;
 }
-body .navbar .navbar-inner
-{
-    background-image: -moz-linear-gradient(top, #eee, #eee);
-    background-image: -ms-linear-gradient(top, #eee, #eee);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eee), to(#eee));
-    background-image: -webkit-linear-gradient(top, #eee, #eee);
-    background-image: -o-linear-gradient(top, #eee, #eee);
-    background-image: linear-gradient(top, #eee, #eee);   
+body .navbar .navbar-inner {
+  background-image:-moz-linear-gradient(top,#eeeeee,#eeeeee);
+  background-image:-ms-linear-gradient(top,#eeeeee,#eeeeee);
+  background-image:-webkit-gradient(linear,0 0,0 100%,from(#eeeeee),to(#eeeeee));
+  background-image:-webkit-linear-gradient(top,#eeeeee,#eeeeee);
+  background-image:-o-linear-gradient(top,#eeeeee,#eeeeee);
+  background-image:linear-gradient(top,#eeeeee,#eeeeee);
 }
+body .navbar .navbar-inner li a { color:#cc0000; }
 body .navbar .navbar-inner li:hover { background-color:#e01414; }
 body .navbar .navbar-inner li .dropdown-menu a:hover { color:#ffffff; }
+body .navbar-search input[type="text"] { border:1px solid #d5d5d5; }
 body .nav-tabs a {
   color:#cc0000;
   font-weight:bold;
@@ -532,6 +515,44 @@ body .ktModal .ktModalHeader .ktModalSubtext {
   padding-bottom:5px;
 }
 body .ktModal .ktModalForm { padding:15px 0px 0px 10px; }
+body .infoBox {
+  margin:0px;
+  border:2px solid #000000;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+}
+body .infoBox .infoBoxTitle {
+  padding:10px;
+  background-color:#fbfbfb;
+  border-bottom:1px solid #999999;
+}
+body .infoBox .infoBoxTitle h2 { display:inline-block; }
+body .infoBox .infoBoxBody .infoSubtext {
+  padding:5px 0px 5px 10px;
+  background-color:#fbfbfb;
+  font-weight:bolder;
+  border-bottom:1px solid #999999;
+}
+body .infoBox .infoBoxBody .infoContent {
+  padding:10px;
+  border-bottom:1px solid #999999;
+}
+body .infoBox .infoFooter {
+  padding:10px;
+  color:#777777;
+}
+body .ktHighlight {
+  padding:2px 4px 3px;
+  font-size:11.05px;
+  color:#ffffff;
+  text-shadow:0 -1px 0 rgba(0,0,0,0.25);
+  background-color:#b94a48;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+}
+body .ktHighlight:hover { background-color:#953b39; }
 body .prettyprint { padding:15px; }
 #footer {
   margin:20px 0px 0px 0px;
@@ -565,9 +586,11 @@ body .prettyprint { padding:15px; }
   height:14px;
   line-height:14px;
   vertical-align:text-top;
+  padding-right:5px;
   background-image:url("../images/ktIcon.png");
   background-position:14px 14px;
   background-repeat:no-repeat;
 }
-.ktWarningOn { background-position:0 0; }
-.ktWarningOff { background-position:0 -19px; }
+.ktFavstar { background-position:0 0; }
+.ktWarningOn { background-position:0 -19px; }
+.ktWarningOff { background-position:0 -38px; }
