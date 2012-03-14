@@ -145,7 +145,8 @@
             <h2>
                 Infoboxes</h2>
             Infoboxes are used to contain primary content material, such as agreement summaries
-            within LAF or RRF. Subtext portions can be duplicated as many times as necessary within an infobox.
+            within LAF or RRF. Subtext portions can be duplicated as many times as necessary
+            within an infobox.
             <div class="regBox">
                 <div class="infoBox span8">
                     <div class="infoBoxTitle">
@@ -245,15 +246,24 @@
 &lt;span class="ktHighlight"&gt;This is highlighted text&lt;/span&gt;
                 </pre>
             </div>
-            <hr />
-            <div class="row-fluid regBox">
-                <h2>
-                    Action Buttons</h2>
-                Action buttons are essentially links with associated icons and text. In most instances,
-                they can be used to provide users with quick actions with a visual represenation
-                of the associated action.
+        </div>
+        <hr />
+        <div class="row-fluid regBox">
+            <h2>
+                Action Buttons</h2>
+            Action buttons are essentially links with associated icons and text. In most instances,
+            they can be used to provide users with quick actions with a visual represenation
+            of the associated action. Just apply the associated icon to a link.
+            <div class="floatingBox regBox span2">
+                <a href="#"><span class="ktIcon ktFavstar"></span>Favorite</a>
             </div>
         </div>
+        <div class="regBox">
+            <pre class="prettyprint lang-html">
+&lt;a href="#"&gt;&lt;span class="ktIcon ktFavstar"&gt;&lt;/span&gt;Favorite&lt;/a&gt;
+            </pre>
+        </div>
+        <hr />
     </div>
     <script type="text/javascript" src="@Url.Content("~/Scripts/bootstrap-tooltip.js")"></script>
     <script type="text/javascript" src="@Url.Content("~/Scripts/ktScript.js")"></script>
