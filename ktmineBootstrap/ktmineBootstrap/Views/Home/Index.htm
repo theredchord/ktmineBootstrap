@@ -130,23 +130,23 @@
                     </div>
                     <div class="row-fluid regBox">
                         <pre class="prettyprint lang-html">
-&lt;div class="ktModal span6"&gt;
-    &lt;div class="ktModalHeader"&gt;
-        &lt;h3&gt;
-            Modal Header&lt;/h3&gt;
-        &lt;div class="ktModalSubtext"&gt;
-            Header subtext goes here&lt;/div&gt;
+    &lt;div class="ktModal span6"&gt;
+        &lt;div class="ktModalHeader"&gt;
+            &lt;h3&gt;
+                Modal Header&lt;/h3&gt;
+            &lt;div class="ktModalSubtext"&gt;
+                Header subtext goes here&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="ktModalForm"&gt;
+            &lt;form class="form-inline"&gt;
+            &lt;label&gt;
+                Form label:&lt;/label&gt;
+            &lt;input type="text" class="" /&gt;
+            &lt;input type="button" class="btn" value="Cancel" /&gt;
+            &lt;input type="button" class="btn ktButton" value="Save" /&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class="ktModalForm"&gt;
-        &lt;form class="form-inline"&gt;
-        &lt;label&gt;
-            Form label:&lt;/label&gt;
-        &lt;input type="text" class="" /&gt;
-        &lt;input type="button" class="btn" value="Cancel" /&gt;
-        &lt;input type="button" class="btn ktButton" value="Save" /&gt;
-        &lt;/form&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
             </pre>
                     </div>
                     <hr />
@@ -220,12 +220,14 @@
                         Infoboxes are used to contain primary content material, such as agreement summaries
                         within LAF or RRF. Subtext portions can be duplicated as many times as necessary
                         within an infobox. Infoboxes also come equipped with a button to hide the inner
-                        contents of the box, excluding the header and footer.
+                        contents of the box, excluding the header and footer. Infoboxes also include accordion
+                        functionality to collapse specific sections.
                         <div class="regBox">
                             <div class="infoBox span8">
-                                <div class="infoBoxTitle">
+                                <div class="infoBoxTitle" id="infoBoxTitle">
                                     <h2>
                                         Title goes here</h2>
+                                    <input type="button" class="btn-mini infoBoxExpand" value="Expand All" />
                                     <input type="button" class="btn-mini infoBoxClose pull-right" value="Close" />
                                 </div>
                                 <div class="infoBoxBody" id="accordion">
@@ -233,7 +235,7 @@
                                         <div class="infoSubtext accordion-heading" data-toggle="collapse" data-target="#infoContent1">
                                             Subtext goes here
                                         </div>
-                                        <div class="collapse in" id="infoContent1">
+                                        <div class="collapse" id="infoContent1">
                                             <div class="infoContent">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum venenatis
                                                 mauris, nec egestas turpis tristique quis. Mauris euismod congue leo, vitae hendrerit
@@ -247,6 +249,9 @@
                                                 lorem. Donec bibendum ornare elit non pretium. Fusce ipsum magna, volutpat nec luctus
                                                 posuere, eleifend sit amet lacus. Curabitur pretium tempus mi, at elementum est
                                                 consectetur et. Praesent et rutrum est.
+                                            </div>
+                                            <div class="infoContentFooter">
+                                                Content footer
                                             </div>
                                         </div>
                                     </div>
@@ -254,7 +259,7 @@
                                         <div class="infoSubtext accordion-heading" data-toggle="collapse" data-target="#infoContent2">
                                             Subtext goes here
                                         </div>
-                                        <div class="collapse in" id="infoContent2">
+                                        <div class="collapse" id="infoContent2">
                                             <div class="infoContent">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum venenatis
                                                 mauris, nec egestas turpis tristique quis. Mauris euismod congue leo, vitae hendrerit
@@ -269,13 +274,16 @@
                                                 posuere, eleifend sit amet lacus. Curabitur pretium tempus mi, at elementum est
                                                 consectetur et. Praesent et rutrum est.
                                             </div>
+                                            <div class="infoContentFooter">
+                                                Content footer
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="accordion-group">
                                         <div class="infoSubtext accordion-heading" data-toggle="collapse" data-target="#infoContent3">
                                             Subtext goes here
                                         </div>
-                                        <div class="collapse in" id="infoContent3">
+                                        <div class="collapse" id="infoContent3">
                                             <div class="infoContent">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum venenatis
                                                 mauris, nec egestas turpis tristique quis. Mauris euismod congue leo, vitae hendrerit
@@ -289,6 +297,9 @@
                                                 lorem. Donec bibendum ornare elit non pretium. Fusce ipsum magna, volutpat nec luctus
                                                 posuere, eleifend sit amet lacus. Curabitur pretium tempus mi, at elementum est
                                                 consectetur et. Praesent et rutrum est.
+                                            </div>
+                                            <div class="infoContentFooter">
+                                                Content footer
                                             </div>
                                         </div>
                                     </div>
@@ -307,29 +318,36 @@
             Title goes here&lt;/h2&gt;
         &lt;input type="button" class="btn-mini infoBoxClose pull-right" value="Close" /&gt;
     &lt;/div&gt;
-    &lt;div class="infoBoxBody"&gt;
-        &lt;div class="infoSubtext"&gt;
-            Subtext goes here
+    &lt;div class="infoBoxBody" id="accordion"&gt;
+        &lt;div class="accordion-group"&gt;
+            &lt;div class="infoSubtext accordion-heading" data-toggle="collapse" data-target="#infoContent1"&gt;
+                Subtext goes here
+            &lt;/div&gt;
+            &lt;div class="collapse in" id="infoContent1"&gt;
+                &lt;div class="infoContent"&gt;
+                    Content text omitted for brevity
+                &lt;/div&gt;
+            &lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class="infoSubtext"&gt;
-            Subtext goes here
+        &lt;div class="accordion-group"&gt;
+            &lt;div class="infoSubtext accordion-heading" data-toggle="collapse" data-target="#infoContent2"&gt;
+                Subtext goes here
+            &lt;/div&gt;
+            &lt;div class="collapse in" id="infoContent2"&gt;
+                &lt;div class="infoContent"&gt;
+                    Content text omitted for brevity
+                &lt;/div&gt;
+            &lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class="infoSubtext"&gt;
-            Subtext goes here
-        &lt;/div&gt;
-        &lt;div class="infoContent"&gt;
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum venenatis
-            mauris, nec egestas turpis tristique quis. Mauris euismod congue leo, vitae hendrerit
-            ipsum sagittis sed. In metus sem, bibendum sed sagittis a, convallis nec libero.
-            Aliquam hendrerit ullamcorper sodales. Etiam aliquet purus quis sapien egestas ac
-            posuere massa pharetra. Donec ultrices turpis fringilla enim eleifend commodo. Sed
-            augue arcu, euismod id scelerisque gravida, rhoncus a erat. Nunc et metus vitae
-            ante sollicitudin facilisis. In dictum arcu et nulla feugiat adipiscing. Curabitur
-            sodales, urna sit amet gravida tincidunt, mauris eros pretium lorem, eget tempus
-            est ante sit amet nisl. Phasellus a mauris a nisl vehicula sodales malesuada at
-            lorem. Donec bibendum ornare elit non pretium. Fusce ipsum magna, volutpat nec luctus
-            posuere, eleifend sit amet lacus. Curabitur pretium tempus mi, at elementum est
-            consectetur et. Praesent et rutrum est.
+        &lt;div class="accordion-group"&gt;
+            &lt;div class="infoSubtext accordion-heading" data-toggle="collapse" data-target="#infoContent3"&gt;
+                Subtext goes here
+            &lt;/div&gt;
+            &lt;div class="collapse in" id="infoContent3"&gt;
+                &lt;div class="infoContent"&gt;
+                    Content text omitted for brevity
+                &lt;/div&gt;
+            &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="infoFooter"&gt;
@@ -415,7 +433,7 @@
                 <script type="text/javascript" src="/ktmineBootstrap/Scripts/bootstrap-collapse.js"></script>
                 <script type="text/javascript" src="/ktmineBootstrap/Scripts/prettify.js"></script>
                 <script type="text/javascript" src="/ktmineBootstrap/Scripts/bootstrap-tooltip.js"></script>
-                <script type="text/javascript" src="/ktmineBootstrap/Scripts/ktScript.js"></script>
+                <script type="text/javascript" src="/ktmineBootstrap/Scripts/ktScript.min.js"></script>
             </div>
         </div>
 </body>

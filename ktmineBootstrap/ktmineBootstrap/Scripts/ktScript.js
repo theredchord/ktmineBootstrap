@@ -1,8 +1,8 @@
 (function() {
-  var iconChange, infoBoxClose, warningPlacement;
+  var iconChange, infoBoxClose, infoBoxExpand;
 
-  warningPlacement = $('.ktWarningOn, .ktWarningOff').tooltip({
-    'placement': 'bottom'
+  $('.ktWarningOn, .ktWarningOff').tooltip({
+    placement: 'bottom'
   });
 
   iconChange = $('#liAssignedSIC').hover(function() {
@@ -10,7 +10,7 @@
     return $('.sicCodeWarning').removeClass('ktWarningOff');
   });
 
-  infoBoxClose = $('.infoBoxClose').click(function() {
+  infoBoxClose = function() {
     var buttonVal;
     $('.infoBoxBody').animate({
       height: 'toggle'
@@ -21,6 +21,24 @@
     } else {
       return $('.infoBoxClose').val('Close');
     }
+  };
+
+  $('.infoBoxTitle').on('click', function() {
+    return infoBoxClose();
+  });
+
+  infoBoxExpand = function() {
+    var buttonVal;
+    $('.collapse').collapse('show');
+    return buttonVal = $('.infoBoxExpand').val();
+  };
+
+  $('.infoBoxExpand').on('click', function(event) {
+    var buttonVal;
+    event.stopPropagation();
+    buttonVal = $('.infoBoxClose').val();
+    if (buttonVal === 'Open') infoBoxClose();
+    return infoBoxExpand();
   });
 
 }).call(this);
