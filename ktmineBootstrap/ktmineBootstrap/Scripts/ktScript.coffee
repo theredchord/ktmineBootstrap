@@ -11,4 +11,8 @@ infoBoxClose = $('.infoBoxClose').click(()->
 	$('.infoBoxBody').animate(
 		height: 'toggle'
 	, 200)
+	buttonVal = $('.infoBoxClose').val()
+	if (buttonVal is 'Close')
+		$('.infoBoxClose').val('Open')
+	else $('.infoBoxClose').val('Close')
 )

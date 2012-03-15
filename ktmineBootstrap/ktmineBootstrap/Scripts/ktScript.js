@@ -11,9 +11,16 @@
   });
 
   infoBoxClose = $('.infoBoxClose').click(function() {
-    return $('.infoBoxBody').animate({
+    var buttonVal;
+    $('.infoBoxBody').animate({
       height: 'toggle'
     }, 200);
+    buttonVal = $('.infoBoxClose').val();
+    if (buttonVal === 'Close') {
+      return $('.infoBoxClose').val('Open');
+    } else {
+      return $('.infoBoxClose').val('Close');
+    }
   });
 
 }).call(this);
