@@ -609,6 +609,7 @@ body .ktModal .ktModalForm{padding:15px 0 0 10px}
 body .infoBox{margin:0;border:2px solid #000;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
 body .infoBox .infoBoxTitle{padding:10px;background-color:#fbfbfb;border-bottom:1px solid #999}
 body .infoBox .infoBoxTitle h2{display:inline-block}
+body .infoBox .infoBoxBody .accordion-group{border:0}
 body .infoBox .infoBoxBody .infoSubtext{padding:5px 0 5px 10px;background-color:#fbfbfb;font-weight:bolder;border-bottom:1px solid #999}
 body .infoBox .infoBoxBody .infoContent{padding:10px;border-bottom:1px solid #999}
 body .infoBox .infoBoxBody .infoContentFooter{padding:5px 10px 5px 10px}

@@ -313,9 +313,10 @@
                             <div class="regBox span12">
                                 <pre class="prettyprint lang-html">
 &lt;div class="infoBox span8"&gt;
-    &lt;div class="infoBoxTitle"&gt;
+    &lt;div class="infoBoxTitle" id="infoBoxTitle"&gt;
         &lt;h2&gt;
             Title goes here&lt;/h2&gt;
+        &lt;input type="button" class="btn-mini infoBoxExpand" value="Expand All" /&gt;
         &lt;input type="button" class="btn-mini infoBoxClose pull-right" value="Close" /&gt;
     &lt;/div&gt;
     &lt;div class="infoBoxBody" id="accordion"&gt;
@@ -323,9 +324,12 @@
             &lt;div class="infoSubtext accordion-heading" data-toggle="collapse" data-target="#infoContent1"&gt;
                 Subtext goes here
             &lt;/div&gt;
-            &lt;div class="collapse in" id="infoContent1"&gt;
+            &lt;div class="collapse" id="infoContent1"&gt;
                 &lt;div class="infoContent"&gt;
                     Content text omitted for brevity
+                &lt;/div&gt;
+                &lt;div class="infoContentFooter"&gt;
+                    Content footer
                 &lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;
@@ -333,9 +337,12 @@
             &lt;div class="infoSubtext accordion-heading" data-toggle="collapse" data-target="#infoContent2"&gt;
                 Subtext goes here
             &lt;/div&gt;
-            &lt;div class="collapse in" id="infoContent2"&gt;
+            &lt;div class="collapse" id="infoContent2"&gt;
                 &lt;div class="infoContent"&gt;
                     Content text omitted for brevity
+                &lt;/div&gt;
+                &lt;div class="infoContentFooter"&gt;
+                    Content footer
                 &lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;
@@ -343,9 +350,12 @@
             &lt;div class="infoSubtext accordion-heading" data-toggle="collapse" data-target="#infoContent3"&gt;
                 Subtext goes here
             &lt;/div&gt;
-            &lt;div class="collapse in" id="infoContent3"&gt;
+            &lt;div class="collapse" id="infoContent3"&gt;
                 &lt;div class="infoContent"&gt;
                     Content text omitted for brevity
+                &lt;/div&gt;
+                &lt;div class="infoContentFooter"&gt;
+                    Content footer
                 &lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;

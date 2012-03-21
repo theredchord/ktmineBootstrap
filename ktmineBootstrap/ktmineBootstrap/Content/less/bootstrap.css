@@ -3426,6 +3426,9 @@ body .infoBox .infoBoxTitle {
 body .infoBox .infoBoxTitle h2 {
   display: inline-block;
 }
+body .infoBox .infoBoxBody .accordion-group {
+  border: none;
+}
 body .infoBox .infoBoxBody .infoSubtext {
   padding: 5px 0px 5px 10px;
   background-color: #fbfbfb;
