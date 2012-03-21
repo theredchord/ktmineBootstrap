@@ -3441,6 +3441,7 @@ body .infoBox .infoBoxBody .infoContent {
 }
 body .infoBox .infoBoxBody .infoContentFooter {
   padding: 5px 10px 5px 10px;
+  border-bottom: 1px solid #999999;
 }
 body .infoBox .infoFooter {
   padding: 10px;
