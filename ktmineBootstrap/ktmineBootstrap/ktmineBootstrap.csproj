@@ -251,6 +251,7 @@
     <Content Include="Scripts\bootstrap-collapse.js" />
     <Content Include="Scripts\bootstrap-dropdown.js" />
     <Content Include="Scripts\bootstrap-tooltip.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\ktScript.js">
       <DependentUpon>ktScript.coffee</DependentUpon>
     </Content>
