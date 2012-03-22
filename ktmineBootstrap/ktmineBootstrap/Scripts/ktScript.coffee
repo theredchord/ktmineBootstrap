@@ -1,3 +1,9 @@
+###
+
+Tooltip functions
+
+###
+
 $('.ktWarningOn, .ktWarningOff').tooltip(
 	placement : 'bottom'
 )
@@ -6,6 +12,12 @@ iconChange = $('#liAssignedSIC').hover(()->
 	$('.sicCodeWarning').addClass('ktWarningOn')
 	$('.sicCodeWarning').removeClass('ktWarningOff')
 )
+
+###
+
+InfoBox functions
+
+###
 
 #Opens and closes the body of an infobox
 infoBoxClose = ()->
@@ -25,7 +37,6 @@ $('.infoBoxTitle').on('click', ()->
 #Expands all sections of a content box
 infoBoxExpand = ()->
 	$('.collapse').collapse('show')
-	buttonVal = $('.infoBoxExpand').val()
 
 #Click event for expansion of all sections
 $('.infoBoxExpand').on('click', (event)->

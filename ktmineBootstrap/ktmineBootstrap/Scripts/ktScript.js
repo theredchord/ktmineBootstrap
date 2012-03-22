@@ -1,3 +1,9 @@
+
+/*
+
+Tooltip functions
+*/
+
 (function() {
   var iconChange, infoBoxClose, infoBoxExpand;
 
@@ -9,6 +15,11 @@
     $('.sicCodeWarning').addClass('ktWarningOn');
     return $('.sicCodeWarning').removeClass('ktWarningOff');
   });
+
+  /*
+  
+  InfoBox functions
+  */
 
   infoBoxClose = function() {
     var buttonVal;
@@ -28,9 +39,7 @@
   });
 
   infoBoxExpand = function() {
-    var buttonVal;
-    $('.collapse').collapse('show');
-    return buttonVal = $('.infoBoxExpand').val();
+    return $('.collapse').collapse('show');
   };
 
   $('.infoBoxExpand').on('click', function(event) {

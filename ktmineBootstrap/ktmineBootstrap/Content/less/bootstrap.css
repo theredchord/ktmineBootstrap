@@ -3426,7 +3426,14 @@ body .infoBox .infoBoxTitle {
 body .infoBox .infoBoxTitle h2 {
   display: inline-block;
 }
+body .infoBox .accordion {
+  margin-bottom: 0px;
+}
 body .infoBox .infoBoxBody .accordion-group {
+  border: none;
+}
+body .infoBox .infoBoxBody .accordion-inner {
+  padding: 0px;
   border: none;
 }
 body .infoBox .infoBoxBody .infoSubtext {
@@ -3440,11 +3447,11 @@ body .infoBox .infoBoxBody .infoContent {
   border-bottom: 1px solid #999999;
 }
 body .infoBox .infoBoxBody .infoContentFooter {
-  padding: 5px 10px 5px 10px;
+  padding: 5px 0px 5px 10px;
   border-bottom: 1px solid #999999;
 }
 body .infoBox .infoFooter {
-  padding: 10px;
+  padding: 5px 5px 10px 10px;
   color: #777777;
 }
 body .ktHighlight {

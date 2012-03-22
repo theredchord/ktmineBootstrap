@@ -609,11 +609,13 @@ body .ktModal .ktModalForm{padding:15px 0 0 10px}
 body .infoBox{margin:0;border:2px solid #000;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
 body .infoBox .infoBoxTitle{padding:10px;background-color:#fbfbfb;border-bottom:1px solid #999}
 body .infoBox .infoBoxTitle h2{display:inline-block}
+body .infoBox .accordion{margin-bottom:0}
 body .infoBox .infoBoxBody .accordion-group{border:0}
+body .infoBox .infoBoxBody .accordion-inner{padding:0;border:0}
 body .infoBox .infoBoxBody .infoSubtext{padding:5px 0 5px 10px;background-color:#fbfbfb;font-weight:bolder;border-bottom:1px solid #999}
 body .infoBox .infoBoxBody .infoContent{padding:10px;border-bottom:1px solid #999}
-body .infoBox .infoBoxBody .infoContentFooter{padding:5px 10px 5px 10px;border-bottom:1px solid #999}
-body .infoBox .infoFooter{padding:10px;color:#777}
+body .infoBox .infoBoxBody .infoContentFooter{padding:5px 0 5px 10px;border-bottom:1px solid #999}
+body .infoBox .infoFooter{padding:5px 5px 10px 10px;color:#777}
 body .ktHighlight{padding:2px 4px 3px;font-size:11.049999999999999px;color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25);background-color:#b94a48;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
 body .ktHighlight:hover{background-color:#953b39}
 body .prettyprint{padding:15px}
