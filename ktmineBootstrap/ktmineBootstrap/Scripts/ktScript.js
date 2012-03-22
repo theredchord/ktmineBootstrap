@@ -50,4 +50,8 @@ Tooltip functions
     return infoBoxExpand();
   });
 
+  $('.infoBoxTitle, .infoSubtext').hover(function() {
+    return $(this).css('cursor', 'pointer');
+  });
+
 }).call(this);

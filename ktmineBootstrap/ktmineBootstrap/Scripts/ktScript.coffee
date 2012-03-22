@@ -46,3 +46,8 @@ $('.infoBoxExpand').on('click', (event)->
 		infoBoxClose()
 	infoBoxExpand()
 )
+
+#Changes cursor to pointer when hovering over agreement headers and sections
+$('.infoBoxTitle, .infoSubtext').hover(()->
+	$(this).css('cursor', 'pointer')
+)
