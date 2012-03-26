@@ -3423,9 +3423,6 @@ body .infoBox .infoBoxTitle {
   background-color: #fbfbfb;
   border-bottom: 1px solid #999999;
 }
-body .infoBox .infoBoxTitle h2 {
-  display: inline-block;
-}
 body .infoBox .accordion {
   margin-bottom: 0px;
 }
