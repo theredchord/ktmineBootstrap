@@ -1,59 +1,46 @@
-﻿body
-{
-	#main
-	{
+﻿body {
+	#main {
 		margin: 5px 0px 0px 0px;
 	}
 
-	h2, h3, h4, h5, h6
-	{
+	h2, h3, h4, h5, h6 {
 		color: @ktRed;
 	}
 
-	.ktButton
-	{
+	.ktButton {
 		color: @white;
 		.buttonBackground(@ktRed, darken(@ktRed, 10%));
 		text-shadow: 0px 0px 0px;
-		&:hover
-		{
+		&:hover {
 			color: @white;
 		}
 	}
 
-	.regBox
-	{
+	.regBox {
 		margin-top: 20px;
 	}
 
-	.navbar
-	{
+	.navbar {
 		margin: 5px 0px 0px 0px;
 		border-top-color: @ktGray;
 		border-top-style: solid;
 		border-top-width: 1px;
-		.navbar-inner
-		{
+		.navbar-inner {
 			background-image: -moz-linear-gradient(top, @grayLighter, @grayLighter);
 			background-image: -ms-linear-gradient(top, @grayLighter, @grayLighter);
 			background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@grayLighter), to(@grayLighter));
 			background-image: -webkit-linear-gradient(top, @grayLighter, @grayLighter);
 			background-image: -o-linear-gradient(top, @grayLighter, @grayLighter);
 			background-image: linear-gradient(top, @grayLighter, @grayLighter);
-			li
-			{
-				a
-				{
+			li {
+				a {
 					color: @ktRed;
 				}
-				&:hover
-				{
+				&:hover {
 					background-color: @ktRedLight;
 				}
-				.dropdown-menu a
-				{
-					&:hover
-					{
+				.dropdown-menu a {
+					&:hover {
 						color: @white;
 					}
 				}
@@ -61,23 +48,19 @@
 		}
 	}
 
-	.navbar-search
-	{
-		input[type="text"]
-		{
+	.navbar-search {
+		input[type="text"] {
 			border: 1px solid @ktGray;
 		}
 	}
 
-	.nav-tabs a
-	{
+	.nav-tabs a {
 		color: @ktRed;
 		font-weight: bold;
 	}
 
 	//Content tabs
-	.sectionTab
-	{
+	.sectionTab {
 		padding-top: 7px;
 		text-align: center;
 		box-shadow: 0px -3px 5px #a6a6a6;
@@ -92,16 +75,14 @@
 		position: relative;
 	}
 
-	.sectionContent
-	{
+	.sectionContent {
 		padding: 15px;
 		box-shadow: 0px -3px 5px @ktBoxShadow;
 		z-index: 0;
 	}
 
 	//Search filter containers
-	.floatingBox
-	{
+	.floatingBox {
 		padding: 10px;
 		background-color: @white;
 		border-color: #ccc;
@@ -112,137 +93,121 @@
 		.box-shadow(0 5px 10px rgba(0,0,0,.2));
 	}
 
-	.ktModal
-	{
+	.ktModal {
 		background-color: @white;
 		border-color: @black;
 		border-style: solid;
 		border-width: 4px;
 		.border-radius(5px);
 		.box-shadow(0 5px 10px rgba(0,0,0,.2));
-		.ktModalHeader
-		{
+		.ktModalHeader {
 			background-color: @grayLighter;
 			padding: 5px 10px 0px 10px;
 			border-bottom: 1px solid @grayLight;
-			.ktModalSubtext
-			{
+			.ktModalSubtext {
 				font-weight: bold;
 				margin-bottom: 5px;
 				padding-bottom: 5px;
 			}
 		}
-		.ktModalForm
-		{
+		.ktModalForm {
 			padding: 15px 0px 0px 10px;
 		}
 	}
 
-	.infoBox
-	{
+	.infoBox {
 		margin: 0px;
 		border: 2px solid @black;
 		.border-radius(5px);
-		.infoBoxTitle
-		{
+		.infoBoxTitle {
 			padding: 10px;
 			background-color: @ktGray2;
 			border-bottom: 1px solid @grayLight;
+			h3 {
+				display: inline-block;
+			}
+			.infoBoxClose {
+				display: inline-block;
+			}
+			.infoBoxExpand {
+				display: block;
+			}
 		}
-		.accordion
-		{
+		.accordion {
 			margin-bottom: 0px;
 		}
-		.infoBoxBody
-		{
-			.accordion-group
-			{
+		.infoBoxBody {
+			.accordion-group {
 				border: none;
 			}
-			.accordion-inner
-			{
+			.accordion-inner {
 				padding: 0px;
 				border: none;
 			}
-			.infoSubtext
-			{
+			.infoSubtext {
 				padding: 5px 0px 5px 10px;
 				background-color: @ktGray2;
 				font-weight: bolder;
 				border-bottom: 1px solid @grayLight;
 			}
-			.infoContent
-			{
+			.infoContent {
 				padding: 10px;
 				border-bottom: 1px solid @grayLight;
 			}
-			.infoContentFooter
-			{
+			.infoContentFooter {
 				padding: 5px 0px 5px 10px;
 				border-bottom: 1px solid @grayLight;
 			}
 		}
-		.infoFooter
-		{
+		.infoFooter {
 			padding: 5px 5px 10px 10px;
 			color: @ktGray3;
 		}
 	}
 
-	.ktHighlight
-	{
+	.ktHighlight {
 		padding: 2px 4px 3px;
 		font-size: @baseFontSize * .85;
 		color: @white;
 		text-shadow: 0 -1px 0 rgba(0,0,0,.25);
 		background-color: @errorText;
 		.border-radius(3px);
-		&:hover    
-		{ 
+		&:hover { 
 			background-color: darken(@errorText, 10%);
 		}
 	}
 
-	.prettyprint
-	{
+	.prettyprint {
 		padding: 15px;
 	}
 }
 
-#footer
-{
+#footer {
 	margin: 20px 0px 0px 0px;
 	bottom: 0px;
-	.footbar
-	{
+	.footbar {
 		height: 35px;
 		background-color: @ktRed;
 		box-shadow: 0px -2px 20px @ktBoxShadow;
-		.nav-pills > li > a
-		{
+		.nav-pills > li > a {
 			color: @white;
-			&:hover
-			{
+			&:hover {
 				color: @ktRed;
 				background-color: @white;
 			}
 		}
 	}
 	
-	.ktTerms
-	{
+	.ktTerms {
 		margin-top: -10px;
-		.nav-pills > li > a
-		{
+		.nav-pills > li > a {
 			font-size: 10px;
 			color: @grayDark;
 		}
-		.nav
-		{
+		.nav {
 			display: inline;
 		}
-		.ktCopyright
-		{
+		.ktCopyright {
 			margin-top: 10px;
 			color: @grayDark;
 			font-size: 10px;
@@ -252,8 +217,7 @@
 }
 
 //Main ktMine sprite reference
-.ktIcon
-{
+.ktIcon {
 	display: inline-block;
 	width: 14px;
 	height: 14px;
@@ -266,6 +230,6 @@
 }
 
 //Icon sprite classes
-.ktFavstar{ background-position: 0 0; } 
-.ktWarningOn{ background-position: 0 -19px; } 
-.ktWarningOff{ background-position: 0 -38px; } 
+.ktFavstar { background-position: 0 0; } 
+.ktWarningOn { background-position: 0 -19px; } 
+.ktWarningOff { background-position: 0 -38px; } 
