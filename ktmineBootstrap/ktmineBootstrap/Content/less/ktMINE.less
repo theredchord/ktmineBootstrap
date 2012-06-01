@@ -1,6 +1,38 @@
-﻿body {
+﻿@import "variables.less";
+@import "mixins.less";
+@import "ktMINEVariables.less";
+
+body {
+	padding: 0px;
+
 	#main {
 		margin: 5px 0px 0px 0px;
+	}
+
+	#ktmineBanner {
+		height: 120px;
+		background-color: @ktGray4;
+		#innerktBanner {
+			margin-top: 10px;
+			height: 100px;
+			background-color: @ktGray5;
+			#ktLogo {
+				margin: 5px 0px 5px 20px;
+			}
+			#bannerText {
+				display: inline-block;
+				margin: 20px 0px 0px 40px;
+				vertical-align: top;
+			    h3 {
+				    font-family: @headerStyle;
+			    }
+			    h1 {
+					margin-top: -10px;
+				    font-family: @headerStyle;
+				    color: @white;
+			    }
+			}
+		}
 	}
 
 	h2, h3, h4, h5, h6 {
@@ -20,12 +52,11 @@
 		margin-top: 20px;
 	}
 
+	// Navigation
 	.navbar {
-		margin: 5px 0px 0px 0px;
-		border-top-color: @ktGray;
-		border-top-style: solid;
-		border-top-width: 1px;
+		margin-top: 0px;
 		.navbar-inner {
+			.border-radius(0px);
 			background-image: -moz-linear-gradient(top, @grayLighter, @grayLighter);
 			background-image: -ms-linear-gradient(top, @grayLighter, @grayLighter);
 			background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@grayLighter), to(@grayLighter));
@@ -34,17 +65,22 @@
 			background-image: linear-gradient(top, @grayLighter, @grayLighter);
 			li {
 				a {
-					color: @ktRed;
-				}
-				&:hover {
-					background-color: @ktRedLight;
+					color: @ktGray6;
+					text-shadow: none;
+					font-weight: bold;
+					font-size: 18px;
 				}
 				.dropdown-menu a {
+					font-size: 12px;
 					&:hover {
 						color: @white;
+						background-color: @ktRed;
 					}
 				}
 			}
+			.ktLogout {
+                float: right;
+            }
 		}
 	}
 
@@ -59,7 +95,7 @@
 		font-weight: bold;
 	}
 
-	//Content tabs
+	// Content tabs
 	.sectionTab {
 		padding-top: 7px;
 		text-align: center;
@@ -81,7 +117,7 @@
 		z-index: 0;
 	}
 
-	//Search filter containers
+	// Search filter containers
 	.floatingBox {
 		padding: 10px;
 		background-color: @white;
@@ -159,6 +195,10 @@
 				border-bottom: 1px solid @grayLight;
 			}
 		}
+		.infoActions {
+			padding: 5px 5px 5px 10px;
+			border-bottom: 1px solid @grayLight;
+		}
 		.infoFooter {
 			padding: 5px 5px 10px 10px;
 			color: @ktGray3;
@@ -216,7 +256,7 @@
 	}
 }
 
-//Main ktMine sprite reference
+// Main ktMine sprite reference
 .ktIcon {
 	display: inline-block;
 	width: 14px;
@@ -229,7 +269,7 @@
 	background-repeat: no-repeat;
 }
 
-//Icon sprite classes
+// Icon sprite classes
 .ktFavstar { background-position: 0 0; } 
 .ktWarningOn { background-position: 0 -19px; } 
 .ktWarningOff { background-position: 0 -38px; } 
