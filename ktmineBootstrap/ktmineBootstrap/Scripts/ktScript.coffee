@@ -1,5 +1,27 @@
 ###
 
+Navbar functions
+
+###
+
+navScroll = $(window).scroll(()->
+	scrollPosition = $(this).scrollTop()
+	
+	if (scrollPosition > 120)
+		$('#ktNavbar').css(
+			'position' : 'fixed',
+			'top' : 0,
+			'left' : 0,
+			'right' : 0
+		)
+	else
+		$('#ktNavbar').css(
+			'position' : 'static',
+		)
+)
+
+###
+
 Tooltip functions
 
 ###
@@ -18,6 +40,12 @@ iconChange = $('#liAssignedSIC').hover(()->
 InfoBox functions
 
 ###
+
+#Shows Action links when user hovers over infobox
+$('.infoBox').on('hover', ()->
+	actions = $(this).find('.infoActions')
+	$(actions).removeClass('hide')
+)
 
 #Opens and closes the body of an infobox
 infoBoxClose = ()->
@@ -45,9 +73,4 @@ $('.infoBoxExpand').on('click', (event)->
 	if (buttonVal is 'Open')
 		infoBoxClose()
 	infoBoxExpand()
-)
-
-#Changes cursor to pointer when hovering over agreement headers and sections
-$('.infoBoxTitle, .infoSubtext').hover(()->
-	$(this).css('cursor', 'pointer')
 )

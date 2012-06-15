@@ -484,9 +484,9 @@
     </None>
     <None Include="Scripts\ktScript.coffee" />
     <Content Include="Views\Home\SidebarLayout.cshtml" />
-    <Content Include="Views\Home\bannerPartial.cshtml" />
-    <Content Include="Views\Home\footerPartial.cshtml" />
-    <Content Include="Views\Home\navPartial.cshtml" />
+    <Content Include="Views\Shared\bannerPartial.cshtml" />
+    <Content Include="Views\Shared\footerPartial.cshtml" />
+    <Content Include="Views\Shared\navPartial.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

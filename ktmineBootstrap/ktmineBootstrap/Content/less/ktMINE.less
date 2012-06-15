@@ -52,42 +52,53 @@ body {
 		margin-top: 20px;
 	}
 
-	// Navigation
-	.navbar {
-		margin-top: 0px;
-		.navbar-inner {
-			.border-radius(0px);
-			background-image: -moz-linear-gradient(top, @grayLighter, @grayLighter);
-			background-image: -ms-linear-gradient(top, @grayLighter, @grayLighter);
-			background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@grayLighter), to(@grayLighter));
-			background-image: -webkit-linear-gradient(top, @grayLighter, @grayLighter);
-			background-image: -o-linear-gradient(top, @grayLighter, @grayLighter);
-			background-image: linear-gradient(top, @grayLighter, @grayLighter);
-			li {
-				a {
-					color: @ktGray6;
-					text-shadow: none;
-					font-weight: bold;
-					font-size: 18px;
-				}
-				.dropdown-menu a {
-					font-size: 12px;
-					&:hover {
-						color: @white;
-						background-color: @ktRed;
-					}
-				}
-			}
-			.ktLogout {
-                float: right;
-            }
-		}
+	.centerBox {
+		width: 50%;
+		margin: 0px auto;
 	}
 
-	.navbar-search {
-		input[type="text"] {
-			border: 1px solid @ktGray;
-		}
+	// Navigation
+	.navbar {
+		height: 30px;
+		margin-top: 0px;
+		z-index: 1500;
+        .navbar-inner {
+			height: 100%;
+            .border-radius(0px);
+            background-image: -moz-linear-gradient(top, @grayLighter, @grayLighter);
+            background-image: -ms-linear-gradient(top, @grayLighter, @grayLighter);
+            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@grayLighter), to(@grayLighter));
+            background-image: -webkit-linear-gradient(top, @grayLighter, @grayLighter);
+            background-image: -o-linear-gradient(top, @grayLighter, @grayLighter);
+            background-image: linear-gradient(top, @grayLighter, @grayLighter);
+			.container {
+				width: 95%;
+			}
+            li {
+                a {
+                    color: @ktGray6;
+					margin: 2px 10px 9px;
+					padding: 4px 6px 4px 6px;
+                    text-shadow: none;
+                    font-weight: bold;
+                    font-size: 13px;
+					&:hover {
+						.border-radius(5px);
+						background-color: @grayLight;
+					}
+                }
+                .dropdown-menu a {
+                    font-size: 12px;
+                    &:hover {
+                        color: @white;
+                        background-color: @ktRed;
+                    }
+                }
+            }
+            .ktLogout {
+                float: right;
+            }
+        }
 	}
 
 	.nav-tabs a {
@@ -154,36 +165,48 @@ body {
 	.infoBox {
 		margin: 0px;
 		border: 2px solid @black;
+		&:hover {
+			border: 2px solid @ktRed;
+		}
 		.border-radius(5px);
 		.infoBoxTitle {
 			padding: 10px;
 			background-color: @ktGray2;
 			border-bottom: 1px solid @grayLight;
+			&:hover {
+				cursor: pointer;
+			}
+			.topItems {
+                .labelContainer {
+					display: inline-block;
+				    .label {
+                        background-color: @ktRed;
+						display: inline;
+                    }
+				}
+				.infoActions {
+					display: inline-block;
+				}
+			}
+			.titleId {
+				margin-top: 5px;
+			}
 			h3 {
-				display: inline-block;
+				color: @infoMain;
 			}
-			.infoBoxClose {
-				display: inline-block;
+			.infoTitleSub {
+				.titleSubItem {
+					color: lighten(@infoMain, 12%);
+					margin-right: 10px;
+					display: inline-block;
+				}
 			}
-			.infoBoxExpand {
-				display: block;
-			}
-		}
-		.accordion {
-			margin-bottom: 0px;
 		}
 		.infoBoxBody {
-			.accordion-group {
-				border: none;
-			}
-			.accordion-inner {
-				padding: 0px;
-				border: none;
-			}
 			.infoSubtext {
 				padding: 5px 0px 5px 10px;
-				background-color: @ktGray2;
-				font-weight: bolder;
+				background-color: darken(@ktGray2, 6%);
+				font-weight: bold;
 				border-bottom: 1px solid @grayLight;
 			}
 			.infoContent {
@@ -195,12 +218,8 @@ body {
 				border-bottom: 1px solid @grayLight;
 			}
 		}
-		.infoActions {
-			padding: 5px 5px 5px 10px;
-			border-bottom: 1px solid @grayLight;
-		}
 		.infoFooter {
-			padding: 5px 5px 10px 10px;
+			padding: 10px;
 			color: @ktGray3;
 		}
 	}
@@ -254,6 +273,11 @@ body {
 			display: inline;
 		}
 	}
+}
+
+.navbar-inner {
+	height: 100%;
+	min-height: 100%;
 }
 
 // Main ktMine sprite reference
