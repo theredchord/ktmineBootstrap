@@ -43,8 +43,8 @@ InfoBox functions
 
 #Shows Action links when user hovers over infobox
 $('.infoBox').on('hover', ()->
-	actions = $(this).find('.infoActions')
-	$(actions).removeClass('hide')
+	actions = $(this).find('.infoActionList')
+	$(actions).toggleClass('hide')
 )
 
 #Opens and closes the body of an infobox

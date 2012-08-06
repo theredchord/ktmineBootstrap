@@ -2,35 +2,20 @@
 <html>
 <head>
     <title>ktMINE Bootstrap</title>
-    <link href="/ktmineBootstrap/Content/less/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/ktmineBootstrap/Content/less/test_bootstrap.min.css" rel="stylesheet"
+        type="text/css" />
     <link href="/ktmineBootstrap/Content/prettify.css" rel="stylesheet" type="text/css" />
 </head>
 <body onload="prettyPrint()">
     <div class="page row-fluid">
-        <div class="row">
-            <div class="container">
-                <div class="row">
-                    <div class="span4">
-                        <div id="logo">
-                            <img src="/ktmineBootstrap/Content/images/ktminelogo_final_130.png" alt="logo" />
-                        </div>
-                    </div>
-                    <div class="span5 pull-right">
-                        <div id="login">
-                            <div class="sectionTab span2">
-                                <h3>
-                                    Login</h3>
-                            </div>
-                            <div class="sectionContent span4">
-                                <form class="form-inline">
-                                <input type="text" class="input-small" placeholder="Username" />
-                                <input type="text" class="input-small" placeholder="Password" />
-                                <input class="ktButton btn-mini span1" type="submit" value="Submit" />
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="row-fluid" id="ktBanner">
+            <img id="ktLogo" src="https://s3.amazonaws.com/ktmineBootstrap/Content/images/ktMINE_finalogo.png"
+                alt="" />
+            <div id="bannerText">
+                <h3>
+                    ktMINE Bootstrap</h3>
+                <h1>
+                    Overview</h1>
             </div>
         </div>
         <div class="row-fluid">
@@ -54,9 +39,6 @@
                                     </ul>
                                 </li>
                             </ul>
-                            <form class="navbar-search pull-right">
-                            <input type="text" class="search-query" placeholder="Search" />
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -150,7 +132,7 @@
             </pre>
                     </div>
                     <hr />
-                    <div class="row-fluid">
+                    <!--                    <div class="row-fluid">
                         <h2>
                             Floating Box Container</h2>
                         Floating containers that are versatile and can contain text content or combobox
@@ -167,19 +149,20 @@
                         </div>
                     </div>
                     <hr />
+                    
                     <div class="row-fluid">
                         <h2>
                             Content Tabs</h2>
                         Content tabs are used to separate content sections similar to the ones seen on the
                         ktMINE public website.
                         <div class="regBox">
-                            <div class="row">
+                            <div class="row-fluid">
                                 <div class="sectionTab span2">
                                     <h3>
                                         Tab title</h3>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row-fluid">
                                 <div class="sectionContent span3">
                                     Regular text<br />
                                     <a href="#">Regular link</a> <span rel="tooltip" title="SIC Code Warning" class="ktIcon ktWarningOn">
@@ -214,6 +197,7 @@
                 </pre>
                     </div>
                     <hr />
+                    -->
                     <div class="row-fluid">
                         <h2>
                             Infoboxes</h2>
@@ -225,99 +209,104 @@
                         <div class="regBox">
                             <div class="infoBox span8">
                                 <div class="infoBoxTitle" id="infoBoxTitle">
+                                    <div class="topItems">
+                                        <div class="infoActions pull-right">
+                                            <ul class="hide unstyled infoActionList">
+                                                <li><a href="#">Action Item 1</a></li>
+                                                <li><a href="#">Action Item 2</a></li>
+                                                <li><a href="#">Action Item 3</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="labelContainer">
+                                            <div class="label label-important">
+                                                Item 1 of 100</div>
+                                        </div>
+                                    </div>
+                                    <div class="titleId">
+                                        Title ID</div>
                                     <h3>
                                         Title goes here</h3>
-                                    <input type="button" class="btn btn-mini infoBoxClose pull-right" value="Close" />
-                                    <input type="button" class="btn btn-mini infoBoxExpand" value="Expand All" />
-                                </div>
-                                <div class="infoBoxBody accordion" id="accordion1">
-                                    <div class="accordion-group">
-                                        <div class="accordion-heading">
-                                            <div class="infoSubtext accordion-toggle" data-toggle="collapse" data-target="#infoContent1">
-                                                Subtext goes here
-                                            </div>
+                                    <div class="infoTitleSub">
+                                        <div class="titleSubItem">
+                                            Subtext item: item info
                                         </div>
-                                        <div class="collapse" id="infoContent1">
-                                            <div class="accordion-inner">
-                                                <div class="infoContent">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum venenatis
-                                                    mauris, nec egestas turpis tristique quis. Mauris euismod congue leo, vitae hendrerit
-                                                    ipsum sagittis sed. In metus sem, bibendum sed sagittis a, convallis nec libero.
-                                                    Aliquam hendrerit ullamcorper sodales. Etiam aliquet purus quis sapien egestas ac
-                                                    posuere massa pharetra. Donec ultrices turpis fringilla enim eleifend commodo. Sed
-                                                    augue arcu, euismod id scelerisque gravida, rhoncus a erat. Nunc et metus vitae
-                                                    ante sollicitudin facilisis. In dictum arcu et nulla feugiat adipiscing. Curabitur
-                                                    sodales, urna sit amet gravida tincidunt, mauris eros pretium lorem, eget tempus
-                                                    est ante sit amet nisl. Phasellus a mauris a nisl vehicula sodales malesuada at
-                                                    lorem. Donec bibendum ornare elit non pretium. Fusce ipsum magna, volutpat nec luctus
-                                                    posuere, eleifend sit amet lacus. Curabitur pretium tempus mi, at elementum est
-                                                    consectetur et. Praesent et rutrum est.
-                                                </div>
-                                                <div class="infoContentFooter">
-                                                    Content footer
-                                                </div>
-                                            </div>
+                                        <div class="titleSubItem">
+                                            Subtext item: item info
                                         </div>
-                                    </div>
-                                    <div class="accordion-group">
-                                        <div class="accordion-heading">
-                                            <div class="infoSubtext accordion-toggle" data-toggle="collapse" data-target="#infoContent2">
-                                                Subtext goes here
-                                            </div>
-                                        </div>
-                                        <div class="collapse" id="infoContent2">
-                                            <div class="accordion-inner">
-                                                <div class="infoContent">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum venenatis
-                                                    mauris, nec egestas turpis tristique quis. Mauris euismod congue leo, vitae hendrerit
-                                                    ipsum sagittis sed. In metus sem, bibendum sed sagittis a, convallis nec libero.
-                                                    Aliquam hendrerit ullamcorper sodales. Etiam aliquet purus quis sapien egestas ac
-                                                    posuere massa pharetra. Donec ultrices turpis fringilla enim eleifend commodo. Sed
-                                                    augue arcu, euismod id scelerisque gravida, rhoncus a erat. Nunc et metus vitae
-                                                    ante sollicitudin facilisis. In dictum arcu et nulla feugiat adipiscing. Curabitur
-                                                    sodales, urna sit amet gravida tincidunt, mauris eros pretium lorem, eget tempus
-                                                    est ante sit amet nisl. Phasellus a mauris a nisl vehicula sodales malesuada at
-                                                    lorem. Donec bibendum ornare elit non pretium. Fusce ipsum magna, volutpat nec luctus
-                                                    posuere, eleifend sit amet lacus. Curabitur pretium tempus mi, at elementum est
-                                                    consectetur et. Praesent et rutrum est.
-                                                </div>
-                                                <div class="infoContentFooter">
-                                                    Content footer
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-group">
-                                        <div class="accordion-heading">
-                                            <div class="infoSubtext accordion-toggle" data-toggle="collapse" data-target="#infoContent3">
-                                                Subtext goes here
-                                            </div>
-                                        </div>
-                                        <div class="collapse" id="infoContent3">
-                                            <div class="accordion-inner">
-                                                <div class="infoContent">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum venenatis
-                                                    mauris, nec egestas turpis tristique quis. Mauris euismod congue leo, vitae hendrerit
-                                                    ipsum sagittis sed. In metus sem, bibendum sed sagittis a, convallis nec libero.
-                                                    Aliquam hendrerit ullamcorper sodales. Etiam aliquet purus quis sapien egestas ac
-                                                    posuere massa pharetra. Donec ultrices turpis fringilla enim eleifend commodo. Sed
-                                                    augue arcu, euismod id scelerisque gravida, rhoncus a erat. Nunc et metus vitae
-                                                    ante sollicitudin facilisis. In dictum arcu et nulla feugiat adipiscing. Curabitur
-                                                    sodales, urna sit amet gravida tincidunt, mauris eros pretium lorem, eget tempus
-                                                    est ante sit amet nisl. Phasellus a mauris a nisl vehicula sodales malesuada at
-                                                    lorem. Donec bibendum ornare elit non pretium. Fusce ipsum magna, volutpat nec luctus
-                                                    posuere, eleifend sit amet lacus. Curabitur pretium tempus mi, at elementum est
-                                                    consectetur et. Praesent et rutrum est.
-                                                </div>
-                                                <div class="infoContentFooter">
-                                                    Content footer
-                                                </div>
-                                            </div>
+                                        <div class="titleSubItem">
+                                            Subtext item: item info
                                         </div>
                                     </div>
                                 </div>
-                                <div class="infoActions">
-                                    Actions go here.
+                                <div class="infoBoxBody">
+                                    <div>
+                                        <div>
+                                            <div class="infoSubtext">
+                                                Subtext goes here
+                                            </div>
+                                        </div>
+                                        <div id="infoContent1">
+                                            <div>
+                                                <div class="infoContent">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum venenatis
+                                                    mauris, nec egestas turpis tristique quis. Mauris euismod congue leo, vitae hendrerit
+                                                    ipsum sagittis sed. In metus sem, bibendum sed sagittis a, convallis nec libero.
+                                                    Aliquam hendrerit ullamcorper sodales. Etiam aliquet purus quis sapien egestas ac
+                                                    posuere massa pharetra. Donec ultrices turpis fringilla enim eleifend commodo. Sed
+                                                    augue arcu, euismod id scelerisque gravida, rhoncus a erat. Nunc et metus vitae
+                                                    ante sollicitudin facilisis. In dictum arcu et nulla feugiat adipiscing. Curabitur
+                                                    sodales, urna sit amet gravida tincidunt, mauris eros pretium lorem, eget tempus
+                                                    est ante sit amet nisl. Phasellus a mauris a nisl vehicula sodales malesuada at
+                                                    lorem. Donec bibendum ornare elit non pretium. Fusce ipsum magna, volutpat nec luctus
+                                                    posuere, eleifend sit amet lacus. Curabitur pretium tempus mi, at elementum est
+                                                    consectetur et. Praesent et rutrum est.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div id="infoContent2">
+                                            <div>
+                                                <div class="infoContent">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum venenatis
+                                                    mauris, nec egestas turpis tristique quis. Mauris euismod congue leo, vitae hendrerit
+                                                    ipsum sagittis sed. In metus sem, bibendum sed sagittis a, convallis nec libero.
+                                                    Aliquam hendrerit ullamcorper sodales. Etiam aliquet purus quis sapien egestas ac
+                                                    posuere massa pharetra. Donec ultrices turpis fringilla enim eleifend commodo. Sed
+                                                    augue arcu, euismod id scelerisque gravida, rhoncus a erat. Nunc et metus vitae
+                                                    ante sollicitudin facilisis. In dictum arcu et nulla feugiat adipiscing. Curabitur
+                                                    sodales, urna sit amet gravida tincidunt, mauris eros pretium lorem, eget tempus
+                                                    est ante sit amet nisl. Phasellus a mauris a nisl vehicula sodales malesuada at
+                                                    lorem. Donec bibendum ornare elit non pretium. Fusce ipsum magna, volutpat nec luctus
+                                                    posuere, eleifend sit amet lacus. Curabitur pretium tempus mi, at elementum est
+                                                    consectetur et. Praesent et rutrum est.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div id="infoContent3">
+                                            <div>
+                                                <div class="infoContent">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum venenatis
+                                                    mauris, nec egestas turpis tristique quis. Mauris euismod congue leo, vitae hendrerit
+                                                    ipsum sagittis sed. In metus sem, bibendum sed sagittis a, convallis nec libero.
+                                                    Aliquam hendrerit ullamcorper sodales. Etiam aliquet purus quis sapien egestas ac
+                                                    posuere massa pharetra. Donec ultrices turpis fringilla enim eleifend commodo. Sed
+                                                    augue arcu, euismod id scelerisque gravida, rhoncus a erat. Nunc et metus vitae
+                                                    ante sollicitudin facilisis. In dictum arcu et nulla feugiat adipiscing. Curabitur
+                                                    sodales, urna sit amet gravida tincidunt, mauris eros pretium lorem, eget tempus
+                                                    est ante sit amet nisl. Phasellus a mauris a nisl vehicula sodales malesuada at
+                                                    lorem. Donec bibendum ornare elit non pretium. Fusce ipsum magna, volutpat nec luctus
+                                                    posuere, eleifend sit amet lacus. Curabitur pretium tempus mi, at elementum est
+                                                    consectetur et. Praesent et rutrum est.
+                                                </div>
+                                                <div class="infoContentFooter">
+                                                    Content footer
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="infoFooter">
                                     Footer text goes here.
@@ -329,66 +318,104 @@
                                 <pre class="prettyprint lang-html">
 &lt;div class="infoBox span8"&gt;
     &lt;div class="infoBoxTitle" id="infoBoxTitle"&gt;
+        &lt;div class="topItems"&gt;
+            &lt;div class="hide infoActions pull-right"&gt;
+                &lt;ul class="unstyled"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Action Item 1&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Action Item 2&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Action Item 3&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="labelContainer"&gt;
+                &lt;div class="label label-important"&gt;
+                    Item 1 of 100&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="titleId"&gt;
+            Title ID&lt;/div&gt;
         &lt;h3&gt;
             Title goes here&lt;/h3&gt;
-        &lt;input type="button" class="btn btn-mini infoBoxClose pull-right" value="Close" /&gt;
-        &lt;input type="button" class="btn btn-mini infoBoxExpand" value="Expand All" /&gt;
-    &lt;/div&gt;
-    &lt;div class="infoBoxBody accordion" id="accordion1"&gt;
-        &lt;div class="accordion-group"&gt;
-            &lt;div class="accordion-heading"&gt;
-                &lt;div class="infoSubtext accordion-toggle" data-toggle="collapse" data-target="#infoContent1"&gt;
-                    Subtext goes here
-                &lt;/div&gt;
+        &lt;div class="infoTitleSub"&gt;
+            &lt;div class="titleSubItem"&gt;
+                Subtext item: item info
             &lt;/div&gt;
-            &lt;div class="collapse" id="infoContent1"&gt;
-                &lt;div class="accordion-inner"&gt;
-                    &lt;div class="infoContent"&gt;
-                        Content text omitted for brevity
-                    &lt;/div&gt;
-                    &lt;div class="infoContentFooter"&gt;
-                        Content footer
-                    &lt;/div&gt;
-                &lt;/div&gt;
+            &lt;div class="titleSubItem"&gt;
+                Subtext item: item info
             &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="accordion-group"&gt;
-            &lt;div class="accordion-heading"&gt;
-                &lt;div class="infoSubtext accordion-toggle" data-toggle="collapse" data-target="#infoContent2"&gt;
-                    Subtext goes here
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class="collapse" id="infoContent2"&gt;
-                &lt;div class="accordion-inner"&gt;
-                    &lt;div class="infoContent"&gt;
-                        Content text omitted for brevity
-                    &lt;/div&gt;
-                    &lt;div class="infoContentFooter"&gt;
-                        Content footer
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="accordion-group"&gt;
-            &lt;div class="accordion-heading"&gt;
-                &lt;div class="infoSubtext accordion-toggle" data-toggle="collapse" data-target="#infoContent3"&gt;
-                    Subtext goes here
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class="collapse" id="infoContent3"&gt;
-                &lt;div class="accordion-inner"&gt;
-                    &lt;div class="infoContent"&gt;
-                        Content text omitted for brevity
-                    &lt;/div&gt;
-                    &lt;div class="infoContentFooter"&gt;
-                        Content footer
-                    &lt;/div&gt;
-                &lt;/div&gt;
+            &lt;div class="titleSubItem"&gt;
+                Subtext item: item info
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class="infoActions"&gt;
-        Actions go here.
+    &lt;div class="infoBoxBody"&gt;
+        &lt;div&gt;
+            &lt;div&gt;
+                &lt;div class="infoSubtext"&gt;
+                    Subtext goes here
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div id="infoContent1"&gt;
+                &lt;div&gt;
+                    &lt;div class="infoContent"&gt;
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum venenatis
+                        mauris, nec egestas turpis tristique quis. Mauris euismod congue leo, vitae hendrerit
+                        ipsum sagittis sed. In metus sem, bibendum sed sagittis a, convallis nec libero.
+                        Aliquam hendrerit ullamcorper sodales. Etiam aliquet purus quis sapien egestas ac
+                        posuere massa pharetra. Donec ultrices turpis fringilla enim eleifend commodo. Sed
+                        augue arcu, euismod id scelerisque gravida, rhoncus a erat. Nunc et metus vitae
+                        ante sollicitudin facilisis. In dictum arcu et nulla feugiat adipiscing. Curabitur
+                        sodales, urna sit amet gravida tincidunt, mauris eros pretium lorem, eget tempus
+                        est ante sit amet nisl. Phasellus a mauris a nisl vehicula sodales malesuada at
+                        lorem. Donec bibendum ornare elit non pretium. Fusce ipsum magna, volutpat nec luctus
+                        posuere, eleifend sit amet lacus. Curabitur pretium tempus mi, at elementum est
+                        consectetur et. Praesent et rutrum est.
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;div id="infoContent2"&gt;
+                &lt;div&gt;
+                    &lt;div class="infoContent"&gt;
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum venenatis
+                        mauris, nec egestas turpis tristique quis. Mauris euismod congue leo, vitae hendrerit
+                        ipsum sagittis sed. In metus sem, bibendum sed sagittis a, convallis nec libero.
+                        Aliquam hendrerit ullamcorper sodales. Etiam aliquet purus quis sapien egestas ac
+                        posuere massa pharetra. Donec ultrices turpis fringilla enim eleifend commodo. Sed
+                        augue arcu, euismod id scelerisque gravida, rhoncus a erat. Nunc et metus vitae
+                        ante sollicitudin facilisis. In dictum arcu et nulla feugiat adipiscing. Curabitur
+                        sodales, urna sit amet gravida tincidunt, mauris eros pretium lorem, eget tempus
+                        est ante sit amet nisl. Phasellus a mauris a nisl vehicula sodales malesuada at
+                        lorem. Donec bibendum ornare elit non pretium. Fusce ipsum magna, volutpat nec luctus
+                        posuere, eleifend sit amet lacus. Curabitur pretium tempus mi, at elementum est
+                        consectetur et. Praesent et rutrum est.
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;div id="infoContent3"&gt;
+                &lt;div&gt;
+                    &lt;div class="infoContent"&gt;
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum venenatis
+                        mauris, nec egestas turpis tristique quis. Mauris euismod congue leo, vitae hendrerit
+                        ipsum sagittis sed. In metus sem, bibendum sed sagittis a, convallis nec libero.
+                        Aliquam hendrerit ullamcorper sodales. Etiam aliquet purus quis sapien egestas ac
+                        posuere massa pharetra. Donec ultrices turpis fringilla enim eleifend commodo. Sed
+                        augue arcu, euismod id scelerisque gravida, rhoncus a erat. Nunc et metus vitae
+                        ante sollicitudin facilisis. In dictum arcu et nulla feugiat adipiscing. Curabitur
+                        sodales, urna sit amet gravida tincidunt, mauris eros pretium lorem, eget tempus
+                        est ante sit amet nisl. Phasellus a mauris a nisl vehicula sodales malesuada at
+                        lorem. Donec bibendum ornare elit non pretium. Fusce ipsum magna, volutpat nec luctus
+                        posuere, eleifend sit amet lacus. Curabitur pretium tempus mi, at elementum est
+                        consectetur et. Praesent et rutrum est.
+                    &lt;/div&gt;
+                    &lt;div class="infoContentFooter"&gt;
+                        Content footer
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="infoFooter"&gt;
         Footer text goes here.

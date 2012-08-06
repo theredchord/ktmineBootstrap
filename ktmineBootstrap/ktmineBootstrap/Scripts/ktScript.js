@@ -48,8 +48,8 @@ Navbar functions
 
   $('.infoBox').on('hover', function() {
     var actions;
-    actions = $(this).find('.infoActions');
-    return $(actions).removeClass('hide');
+    actions = $(this).find('.infoActionList');
+    return $(actions).toggleClass('hide');
   });
 
   infoBoxClose = function() {

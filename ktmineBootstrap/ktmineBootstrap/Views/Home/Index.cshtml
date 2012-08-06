@@ -94,7 +94,7 @@
             </div>
         </div>
         <hr />
-        <div class="row-fluid">
+@*        <div class="row-fluid">
             <h2>
                 Content Tabs</h2>
             Content tabs are used to separate content sections similar to the ones seen on the
@@ -140,7 +140,7 @@
 &lt;/div&gt;
                 </pre>
         </div>
-        <hr />
+        <hr />*@
         <div class="row-fluid">
             <h2>
                 Infoboxes</h2>
@@ -153,8 +153,8 @@
                 <div class="infoBox span8">
                     <div class="infoBoxTitle" id="infoBoxTitle">
                         <div class="topItems">
-                            <div class="hide infoActions pull-right">
-                                <ul class="unstyled">
+                            <div class="infoActions pull-right">
+                                <ul class="hide unstyled infoActionList">
                                     <li><a href="#">Action Item 1</a></li>
                                     <li><a href="#">Action Item 2</a></li>
                                     <li><a href="#">Action Item 3</a></li>
@@ -261,99 +261,104 @@
                     <pre class="prettyprint lang-html">
 &lt;div class="infoBox span8"&gt;
     &lt;div class="infoBoxTitle" id="infoBoxTitle"&gt;
+        &lt;div class="topItems"&gt;
+            &lt;div class="hide infoActions pull-right"&gt;
+                &lt;ul class="unstyled"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Action Item 1&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Action Item 2&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Action Item 3&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="labelContainer"&gt;
+                &lt;div class="label label-important"&gt;
+                    Item 1 of 100&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="titleId"&gt;
+            Title ID&lt;/div&gt;
         &lt;h3&gt;
             Title goes here&lt;/h3&gt;
-        &lt;input type="button" class="btn btn-mini infoBoxClose pull-right" value="Close" /&gt;
-        &lt;input type="button" class="btn btn-mini infoBoxExpand" value="Expand All" /&gt;
-    &lt;/div&gt;
-    &lt;div class="infoBoxBody accordion" id="accordion1"&gt;
-        &lt;div class="accordion-group"&gt;
-            &lt;div class="accordion-heading"&gt;
-                &lt;div class="infoSubtext accordion-toggle" data-toggle="collapse" data-target="#infoContent1"&gt;
-                    Subtext goes here
-                &lt;/div&gt;
+        &lt;div class="infoTitleSub"&gt;
+            &lt;div class="titleSubItem"&gt;
+                Subtext item: item info
             &lt;/div&gt;
-            &lt;div class="collapse" id="infoContent1"&gt;
-                &lt;div class="accordion-inner"&gt;
-                    &lt;div class="infoContent"&gt;
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum venenatis
-                        mauris, nec egestas turpis tristique quis. Mauris euismod congue leo, vitae hendrerit
-                        ipsum sagittis sed. In metus sem, bibendum sed sagittis a, convallis nec libero.
-                        Aliquam hendrerit ullamcorper sodales. Etiam aliquet purus quis sapien egestas ac
-                        posuere massa pharetra. Donec ultrices turpis fringilla enim eleifend commodo. Sed
-                        augue arcu, euismod id scelerisque gravida, rhoncus a erat. Nunc et metus vitae
-                        ante sollicitudin facilisis. In dictum arcu et nulla feugiat adipiscing. Curabitur
-                        sodales, urna sit amet gravida tincidunt, mauris eros pretium lorem, eget tempus
-                        est ante sit amet nisl. Phasellus a mauris a nisl vehicula sodales malesuada at
-                        lorem. Donec bibendum ornare elit non pretium. Fusce ipsum magna, volutpat nec luctus
-                        posuere, eleifend sit amet lacus. Curabitur pretium tempus mi, at elementum est
-                        consectetur et. Praesent et rutrum est.
-                    &lt;/div&gt;
-                    &lt;div class="infoContentFooter"&gt;
-                        Content footer
-                    &lt;/div&gt;
-                &lt;/div&gt;
+            &lt;div class="titleSubItem"&gt;
+                Subtext item: item info
             &lt;/div&gt;
-        &lt;/div&gt;
-                                &lt;div class="accordion-group"&gt;
-            &lt;div class="accordion-heading"&gt;
-                &lt;div class="infoSubtext accordion-toggle" data-toggle="collapse" data-target="#infoContent2"&gt;
-                    Subtext goes here
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class="collapse" id="infoContent2"&gt;
-                &lt;div class="accordion-inner"&gt;
-                    &lt;div class="infoContent"&gt;
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum venenatis
-                        mauris, nec egestas turpis tristique quis. Mauris euismod congue leo, vitae hendrerit
-                        ipsum sagittis sed. In metus sem, bibendum sed sagittis a, convallis nec libero.
-                        Aliquam hendrerit ullamcorper sodales. Etiam aliquet purus quis sapien egestas ac
-                        posuere massa pharetra. Donec ultrices turpis fringilla enim eleifend commodo. Sed
-                        augue arcu, euismod id scelerisque gravida, rhoncus a erat. Nunc et metus vitae
-                        ante sollicitudin facilisis. In dictum arcu et nulla feugiat adipiscing. Curabitur
-                        sodales, urna sit amet gravida tincidunt, mauris eros pretium lorem, eget tempus
-                        est ante sit amet nisl. Phasellus a mauris a nisl vehicula sodales malesuada at
-                        lorem. Donec bibendum ornare elit non pretium. Fusce ipsum magna, volutpat nec luctus
-                        posuere, eleifend sit amet lacus. Curabitur pretium tempus mi, at elementum est
-                        consectetur et. Praesent et rutrum est.
-                    &lt;/div&gt;
-                    &lt;div class="infoContentFooter"&gt;
-                        Content footer
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-                                &lt;div class="accordion-group"&gt;
-            &lt;div class="accordion-heading"&gt;
-                &lt;div class="infoSubtext accordion-toggle" data-toggle="collapse" data-target="#infoContent3"&gt;
-                    Subtext goes here
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class="collapse" id="infoContent3"&gt;
-                &lt;div class="accordion-inner"&gt;
-                    &lt;div class="infoContent"&gt;
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum venenatis
-                        mauris, nec egestas turpis tristique quis. Mauris euismod congue leo, vitae hendrerit
-                        ipsum sagittis sed. In metus sem, bibendum sed sagittis a, convallis nec libero.
-                        Aliquam hendrerit ullamcorper sodales. Etiam aliquet purus quis sapien egestas ac
-                        posuere massa pharetra. Donec ultrices turpis fringilla enim eleifend commodo. Sed
-                        augue arcu, euismod id scelerisque gravida, rhoncus a erat. Nunc et metus vitae
-                        ante sollicitudin facilisis. In dictum arcu et nulla feugiat adipiscing. Curabitur
-                        sodales, urna sit amet gravida tincidunt, mauris eros pretium lorem, eget tempus
-                        est ante sit amet nisl. Phasellus a mauris a nisl vehicula sodales malesuada at
-                        lorem. Donec bibendum ornare elit non pretium. Fusce ipsum magna, volutpat nec luctus
-                        posuere, eleifend sit amet lacus. Curabitur pretium tempus mi, at elementum est
-                        consectetur et. Praesent et rutrum est.
-                    &lt;/div&gt;
-                    &lt;div class="infoContentFooter"&gt;
-                        Content footer
-                    &lt;/div&gt;
-                &lt;/div&gt;
+            &lt;div class="titleSubItem"&gt;
+                Subtext item: item info
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class="infoActions"&gt;
-        Actions go here.
+    &lt;div class="infoBoxBody"&gt;
+        &lt;div&gt;
+            &lt;div&gt;
+                &lt;div class="infoSubtext"&gt;
+                    Subtext goes here
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div id="infoContent1"&gt;
+                &lt;div&gt;
+                    &lt;div class="infoContent"&gt;
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum venenatis
+                        mauris, nec egestas turpis tristique quis. Mauris euismod congue leo, vitae hendrerit
+                        ipsum sagittis sed. In metus sem, bibendum sed sagittis a, convallis nec libero.
+                        Aliquam hendrerit ullamcorper sodales. Etiam aliquet purus quis sapien egestas ac
+                        posuere massa pharetra. Donec ultrices turpis fringilla enim eleifend commodo. Sed
+                        augue arcu, euismod id scelerisque gravida, rhoncus a erat. Nunc et metus vitae
+                        ante sollicitudin facilisis. In dictum arcu et nulla feugiat adipiscing. Curabitur
+                        sodales, urna sit amet gravida tincidunt, mauris eros pretium lorem, eget tempus
+                        est ante sit amet nisl. Phasellus a mauris a nisl vehicula sodales malesuada at
+                        lorem. Donec bibendum ornare elit non pretium. Fusce ipsum magna, volutpat nec luctus
+                        posuere, eleifend sit amet lacus. Curabitur pretium tempus mi, at elementum est
+                        consectetur et. Praesent et rutrum est.
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;div id="infoContent2"&gt;
+                &lt;div&gt;
+                    &lt;div class="infoContent"&gt;
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum venenatis
+                        mauris, nec egestas turpis tristique quis. Mauris euismod congue leo, vitae hendrerit
+                        ipsum sagittis sed. In metus sem, bibendum sed sagittis a, convallis nec libero.
+                        Aliquam hendrerit ullamcorper sodales. Etiam aliquet purus quis sapien egestas ac
+                        posuere massa pharetra. Donec ultrices turpis fringilla enim eleifend commodo. Sed
+                        augue arcu, euismod id scelerisque gravida, rhoncus a erat. Nunc et metus vitae
+                        ante sollicitudin facilisis. In dictum arcu et nulla feugiat adipiscing. Curabitur
+                        sodales, urna sit amet gravida tincidunt, mauris eros pretium lorem, eget tempus
+                        est ante sit amet nisl. Phasellus a mauris a nisl vehicula sodales malesuada at
+                        lorem. Donec bibendum ornare elit non pretium. Fusce ipsum magna, volutpat nec luctus
+                        posuere, eleifend sit amet lacus. Curabitur pretium tempus mi, at elementum est
+                        consectetur et. Praesent et rutrum est.
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;div id="infoContent3"&gt;
+                &lt;div&gt;
+                    &lt;div class="infoContent"&gt;
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum venenatis
+                        mauris, nec egestas turpis tristique quis. Mauris euismod congue leo, vitae hendrerit
+                        ipsum sagittis sed. In metus sem, bibendum sed sagittis a, convallis nec libero.
+                        Aliquam hendrerit ullamcorper sodales. Etiam aliquet purus quis sapien egestas ac
+                        posuere massa pharetra. Donec ultrices turpis fringilla enim eleifend commodo. Sed
+                        augue arcu, euismod id scelerisque gravida, rhoncus a erat. Nunc et metus vitae
+                        ante sollicitudin facilisis. In dictum arcu et nulla feugiat adipiscing. Curabitur
+                        sodales, urna sit amet gravida tincidunt, mauris eros pretium lorem, eget tempus
+                        est ante sit amet nisl. Phasellus a mauris a nisl vehicula sodales malesuada at
+                        lorem. Donec bibendum ornare elit non pretium. Fusce ipsum magna, volutpat nec luctus
+                        posuere, eleifend sit amet lacus. Curabitur pretium tempus mi, at elementum est
+                        consectetur et. Praesent et rutrum est.
+                    &lt;/div&gt;
+                    &lt;div class="infoContentFooter"&gt;
+                        Content footer
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="infoFooter"&gt;
         Footer text goes here.

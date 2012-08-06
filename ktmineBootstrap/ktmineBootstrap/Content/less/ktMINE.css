@@ -66,27 +66,22 @@ body {
 body #main {
   margin: 5px 0px 0px 0px;
 }
-body #ktmineBanner {
-  height: 120px;
-  background-color: #cdcdcd;
-}
-body #ktmineBanner #innerktBanner {
-  margin-top: 10px;
+body #ktBanner {
   height: 100px;
   background-color: #a5a5a5;
 }
-body #ktmineBanner #innerktBanner #ktLogo {
+body #ktBanner #ktLogo {
   margin: 5px 0px 5px 20px;
 }
-body #ktmineBanner #innerktBanner #bannerText {
+body #ktBanner #bannerText {
   display: inline-block;
   margin: 20px 0px 0px 40px;
   vertical-align: top;
 }
-body #ktmineBanner #innerktBanner #bannerText h3 {
+body #ktBanner #bannerText h3 {
   font-family: Arial Black;
 }
-body #ktmineBanner #innerktBanner #bannerText h1 {
+body #ktBanner #bannerText h1 {
   margin-top: -10px;
   font-family: Arial Black;
   color: #ffffff;
@@ -230,6 +225,10 @@ body .navbar {
   height: 30px;
   margin-top: 0px;
   z-index: 1500;
+}
+body .navbar .divider-vertical {
+  height: 30px;
+  background-color: #a5a5a5;
 }
 body .navbar .navbar-inner {
   height: 100%;

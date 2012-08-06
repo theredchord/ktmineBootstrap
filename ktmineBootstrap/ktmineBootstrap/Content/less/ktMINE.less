@@ -9,31 +9,26 @@ body {
 		margin: 5px 0px 0px 0px;
 	}
 
-	#ktmineBanner {
-		height: 120px;
-		background-color: @ktGray4;
-		#innerktBanner {
-			margin-top: 10px;
-			height: 100px;
-			background-color: @ktGray5;
-			#ktLogo {
-				margin: 5px 0px 5px 20px;
-			}
-			#bannerText {
-				display: inline-block;
-				margin: 20px 0px 0px 40px;
-				vertical-align: top;
-			    h3 {
-				    font-family: @headerStyle;
-			    }
-			    h1 {
-					margin-top: -10px;
-				    font-family: @headerStyle;
-				    color: @white;
-			    }
-			}
-		}
-	}
+    #ktBanner {
+        height: 100px;
+        background-color: @ktGray5;
+        #ktLogo {
+            margin: 5px 0px 5px 20px;
+        }
+        #bannerText {
+            display: inline-block;
+            margin: 20px 0px 0px 40px;
+            vertical-align: top;
+            h3 {
+                font-family: @headerStyle;
+            }
+            h1 {
+                margin-top: -10px;
+                font-family: @headerStyle;
+                color: @white;
+            }
+        }
+    }
 
 	h2, h3, h4, h5, h6 {
 		color: @ktRed;
@@ -62,6 +57,10 @@ body {
 		height: 30px;
 		margin-top: 0px;
 		z-index: 1500;
+		.divider-vertical {
+            height: 30px;
+            background-color: @ktGray5;
+        }
         .navbar-inner {
 			height: 100%;
             .border-radius(0px);
