@@ -79,11 +79,13 @@ body #ktBanner #bannerText {
   vertical-align: top;
 }
 body #ktBanner #bannerText h3 {
-  font-family: Arial Black, Arial, sans-serif;
+  font-weight: 900;
+  font-family: "Arial Black", Arial, sans-serif;
 }
 body #ktBanner #bannerText h1 {
   margin-top: -10px;
-  font-family: Arial Black, Arial, sans-serif;
+  font-weight: 900;
+  font-family: "Arial Black", Arial, sans-serif;
   color: #ffffff;
 }
 body h2,
@@ -229,6 +231,14 @@ body .navbar {
 body .navbar .divider-vertical {
   height: 30px;
   background-color: #a5a5a5;
+}
+body .navbar .nav .navText {
+  color: #000000;
+  margin: 2px 10px 9px;
+  padding: 4px 6px 4px 6px;
+  text-shadow: none;
+  font-weight: bold;
+  font-size: 13px;
 }
 body .navbar .navbar-inner {
   height: 100%;
