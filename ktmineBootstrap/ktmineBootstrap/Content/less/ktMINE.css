@@ -79,11 +79,11 @@ body #ktBanner #bannerText {
   vertical-align: top;
 }
 body #ktBanner #bannerText h3 {
-  font-family: Arial Black;
+  font-family: Arial Black, Arial, sans-serif;
 }
 body #ktBanner #bannerText h1 {
   margin-top: -10px;
-  font-family: Arial Black;
+  font-family: Arial Black, Arial, sans-serif;
   color: #ffffff;
 }
 body h2,
