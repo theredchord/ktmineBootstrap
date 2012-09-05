@@ -377,9 +377,6 @@ body .infoBox .infoBoxTitle {
   background-color: #fbfbfb;
   border-bottom: 1px solid #999999;
 }
-body .infoBox .infoBoxTitle:hover {
-  cursor: pointer;
-}
 body .infoBox .infoBoxTitle .topItems .labelContainer {
   display: inline-block;
 }
