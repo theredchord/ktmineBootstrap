@@ -24191,11 +24191,28 @@ body #ktBanner #bannerText h1 {
   font-family: "Arial Black", Arial, sans-serif;
   color: #ffffff;
 }
+body h1 {
+  font-size: 30px;
+  line-height: 36px;
+}
+body h3 {
+  font-size: 18px;
+  line-height: 27px;
+}
+body h4 {
+  font-size: 14px;
+}
+body h4,
+body h5,
+body h6 {
+  line-height: 18px;
+}
 body h2,
 body h3,
 body h4,
 body h5,
 body h6 {
+  margin: 0;
   color: #cc0000;
 }
 body .ktButton {

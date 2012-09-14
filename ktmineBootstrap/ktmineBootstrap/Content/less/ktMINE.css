@@ -96,6 +96,14 @@ body h3 {
   font-size: 18px;
   line-height: 27px;
 }
+body h4 {
+  font-size: 14px;
+}
+body h4,
+body h5,
+body h6 {
+  line-height: 18px;
+}
 body h2,
 body h3,
 body h4,
